@@ -1,0 +1,48 @@
+{
+  "source": "ablation_gs.tex",
+  "sha256": "0ef353128887d7ce068d986016fdf09cff5c0ea5d1fc10b020871fe2738b81b1",
+  "dataset": "DL3DV",
+  "rows": {
+    "no_adaptive_spawn": {
+      "vae_mse": 0.182,
+      "vae_cosine": 0.776,
+      "gaussians_k": 75.0,
+      "recon_latency_ms": 230.31,
+      "vae_fps": 742.4,
+      "psnr": 16.26,
+      "ssim": 0.409,
+      "lpips": 0.535
+    },
+    "no_refinement": {
+      "vae_mse": 0.213,
+      "vae_cosine": 0.743,
+      "gaussians_k": 45.0,
+      "recon_latency_ms": 205.38,
+      "vae_fps": 937.5,
+      "psnr": 15.52,
+      "ssim": 0.382,
+      "lpips": 0.571
+    },
+    "no_vae_lifting": {
+      "vae_mse": 0.57,
+      "vae_cosine": 0.467,
+      "gaussians_k": null,
+      "recon_latency_ms": null,
+      "vae_fps": 2.97,
+      "psnr": null,
+      "ssim": null,
+      "lpips": null
+    },
+    "full": {
+      "vae_mse": 0.177,
+      "vae_cosine": 0.782,
+      "gaussians_k": 41.0,
+      "recon_latency_ms": 224.81,
+      "vae_fps": 943.6,
+      "psnr": 16.52,
+      "ssim": 0.406,
+      "lpips": 0.534
+    }
+  },
+  "rendering_speedup": 317.7104377104377
+}

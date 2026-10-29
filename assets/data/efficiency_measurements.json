@@ -1,0 +1,126 @@
+{
+  "policy": "Exclude each worker process\u2019s first monocular initialization, first generated memory update, first VAE render, and first diagnostic RGB render. Remove both views and time. Retain every other call, including later latency spikes, first-image VAE encoding and depth alignment; no unused final update.",
+  "fps_aggregation": "Sum of retained views divided by sum of retained synchronized seconds within each dataset; charts average the two dataset values equally.",
+  "memory_definition": "Mean final 3D map payload in MiB; not peak GPU memory, model weights, or all KV caches.",
+  "rgb_definition": "Diagnostic RGB rendering only; the generator is conditioned with direct latent renderings.",
+  "runs": {
+    "L3G-World": "efficiency_teacher3300_student4600_aligned_remaining30_20261024",
+    "L3G-World Fast": "efficiency_student4600_gs66k_9view_full_20261025"
+  },
+  "schedules": {
+    "L3G-World": {
+      "views_per_update": 20
+    },
+    "L3G-World Fast": {
+      "latents_per_generation_chunk": 3,
+      "generation_chunks_per_update": 3,
+      "views_per_update": 9
+    }
+  },
+  "datasets": {
+    "dl3dv": {
+      "L3G-World": {
+        "scenes": 51,
+        "workers": 14,
+        "gaussians_mean": 32754.196078431374,
+        "map_mib_mean": 11.877806719611673,
+        "all_calls": {
+          "reconstruction_fps": 15.885891950163893,
+          "rgb_fps": 458.3255488662194,
+          "vae_fps": 865.4866356010733
+        },
+        "exclude_process_first_calls": {
+          "reconstruction_fps": 40.08771556248702,
+          "rgb_fps": 460.72827406390434,
+          "vae_fps": 1086.5815658690658
+        },
+        "removed": {
+          "reconstruction_calls": 28,
+          "reconstruction_seconds": 203.09065966680646,
+          "reconstruction_views": 294,
+          "vae_calls": 14,
+          "vae_seconds": 1.7813379596918821,
+          "rgb_calls": 14,
+          "rgb_seconds": 2.7433482203632593
+        }
+      },
+      "L3G-World Fast": {
+        "scenes": 51,
+        "workers": 3,
+        "gaussians_mean": 70447.05882352941,
+        "map_mib_mean": 25.546545140883502,
+        "all_calls": {
+          "reconstruction_fps": 33.02286537940133,
+          "rgb_fps": 323.7742349464825,
+          "vae_fps": 807.7722082920876
+        },
+        "exclude_process_first_calls": {
+          "reconstruction_fps": 37.814292750224915,
+          "rgb_fps": 323.25345149684085,
+          "vae_fps": 823.7087210914898
+        },
+        "removed": {
+          "reconstruction_calls": 6,
+          "reconstruction_seconds": 23.884543041698635,
+          "reconstruction_views": 30,
+          "vae_calls": 3,
+          "vae_seconds": 0.2795032998546958,
+          "rgb_calls": 3,
+          "rgb_seconds": 0.22131998091936111
+        }
+      }
+    },
+    "re10k": {
+      "L3G-World": {
+        "scenes": 50,
+        "workers": 13,
+        "gaussians_mean": 24571.52,
+        "map_mib_mean": 8.910484771728516,
+        "all_calls": {
+          "reconstruction_fps": 13.511009485930199,
+          "rgb_fps": 557.2913478494175,
+          "vae_fps": 849.4156955764078
+        },
+        "exclude_process_first_calls": {
+          "reconstruction_fps": 38.880500476372504,
+          "rgb_fps": 577.0010848138138,
+          "vae_fps": 1101.9382497361287
+        },
+        "removed": {
+          "reconstruction_calls": 26,
+          "reconstruction_seconds": 250.90561391599476,
+          "reconstruction_views": 273,
+          "vae_calls": 13,
+          "vae_seconds": 1.9474096987396479,
+          "rgb_calls": 13,
+          "rgb_seconds": 3.3144109342247248
+        }
+      },
+      "L3G-World Fast": {
+        "scenes": 50,
+        "workers": 3,
+        "gaussians_mean": 41774.08,
+        "map_mib_mean": 15.148729248046875,
+        "all_calls": {
+          "reconstruction_fps": 35.68898593610421,
+          "rgb_fps": 515.6070785011236,
+          "vae_fps": 1152.6327642108029
+        },
+        "exclude_process_first_calls": {
+          "reconstruction_fps": 42.823459495138536,
+          "rgb_fps": 516.0969300579598,
+          "vae_fps": 1209.8920910034306
+        },
+        "removed": {
+          "reconstruction_calls": 6,
+          "reconstruction_seconds": 28.242709992453456,
+          "reconstruction_views": 30,
+          "vae_calls": 3,
+          "vae_seconds": 0.4333329051733017,
+          "rgb_calls": 3,
+          "rgb_seconds": 0.2593479063361883
+        }
+      }
+    }
+  }
+}

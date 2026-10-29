@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "description": "Synchronized input, RGB online reconstruction, and directly rendered VAE-feature PCA; one global PCA across scenes/time",
+  "pca_basis": "assets/online_reconstruction/pca_basis.json",
+  "scenes": [
+    {
+      "id": "dl3dv_b93f5691ba1c",
+      "poster": "assets/online_reconstruction/dl3dv_b93f5691ba1c/poster.webp",
+      "input_video": "assets/online_reconstruction/dl3dv_b93f5691ba1c/input.mp4",
+      "rgb_video": "assets/online_reconstruction/dl3dv_b93f5691ba1c/rgb.mp4",
+      "pca_video": "assets/online_reconstruction/dl3dv_b93f5691ba1c/vae_pca.mp4",
+      "fps": 24.0,
+      "frame_count": 347,
+      "source": "dl3dv_b93f5691ba1c",
+      "width": 832,
+      "height": 480,
+      "first_memory_frame": 12,
+      "camera": "Saved RGB observer, 0.18x depth behind and0.06x above input camera",
+      "pca": "One global fixed basis and color range shared by all five scenes/time; no VAE decoding"
+    },
+    {
+      "id": "sample_07",
+      "poster": "assets/online_reconstruction/sample_07/poster.webp",
+      "input_video": "assets/online_reconstruction/sample_07/input.mp4",
+      "rgb_video": "assets/online_reconstruction/sample_07/rgb.mp4",
+      "pca_video": "assets/online_reconstruction/sample_07/vae_pca.mp4",
+      "fps": 24.0,
+      "frame_count": 367,
+      "source": "sample_07",
+      "width": 832,
+      "height": 480,
+      "first_memory_frame": 12,
+      "camera": "Saved RGB observer, 0.18x depth behind and0.06x above input camera",
+      "pca": "One global fixed basis and color range shared by all five scenes/time; no VAE decoding"
+    },
+    {
+      "id": "sample_09",
+      "poster": "assets/online_reconstruction/sample_09/poster.webp",
+      "input_video": "assets/online_reconstruction/sample_09/input.mp4",
+      "rgb_video": "assets/online_reconstruction/sample_09/rgb.mp4",
+      "pca_video": "assets/online_reconstruction/sample_09/vae_pca.mp4",
+      "fps": 24.0,
+      "frame_count": 361,
+      "source": "sample_09",
+      "width": 832,
+      "height": 480,
+      "first_memory_frame": 12,
+      "camera": "Saved RGB observer, 0.18x depth behind and0.06x above input camera",
+      "pca": "One global fixed basis and color range shared by all five scenes/time; no VAE decoding"
+    },
+    {
+      "id": "sample_03",
+      "poster": "assets/online_reconstruction/sample_03/poster.webp",
+      "input_video": "assets/online_reconstruction/sample_03/input.mp4",
+      "rgb_video": "assets/online_reconstruction/sample_03/rgb.mp4",
+      "pca_video": "assets/online_reconstruction/sample_03/vae_pca.mp4",
+      "fps": 24.0,
+      "frame_count": 410,
+      "source": "sample_03",
+      "width": 832,
+      "height": 480,
+      "first_memory_frame": 12,
+      "camera": "Saved RGB observer, 0.18x depth behind and0.06x above input camera",
+      "pca": "One global fixed basis and color range shared by all five scenes/time; no VAE decoding"
+    },
+    {
+      "id": "sample_04",
+      "poster": "assets/online_reconstruction/sample_04/poster.webp",
+      "input_video": "assets/online_reconstruction/sample_04/input.mp4",
+      "rgb_video": "assets/online_reconstruction/sample_04/rgb.mp4",
+      "pca_video": "assets/online_reconstruction/sample_04/vae_pca.mp4",
+      "fps": 24.0,
+      "frame_count": 407,
+      "source": "sample_04",
+      "width": 832,
+      "height": 480,
+      "first_memory_frame": 12,
+      "camera": "Saved RGB observer, 0.18x depth behind and0.06x above input camera",
+      "pca": "One global fixed basis and color range shared by all five scenes/time; no VAE decoding"
+    }
+  ]
+}

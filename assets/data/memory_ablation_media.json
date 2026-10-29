@@ -1,0 +1,1398 @@
+{
+  "scenes": [
+    {
+      "id": "sample_03",
+      "fps": 24.0,
+      "frame_count": 397,
+      "video": "assets/memory_ablations/sample_03.mp4",
+      "variants": [
+        {
+          "id": "baseline",
+          "crop": {
+            "x": 0,
+            "y": 36,
+            "width": 624,
+            "height": 360
+          }
+        },
+        {
+          "id": "no_refinement",
+          "crop": {
+            "x": 1248,
+            "y": 36,
+            "width": 624,
+            "height": 360
+          }
+        },
+        {
+          "id": "no_adaptive_spawn",
+          "crop": {
+            "x": 624,
+            "y": 36,
+            "width": 624,
+            "height": 360
+          }
+        }
+      ],
+      "growth": {
+        "schema": "l3g-online-ablation-growth-v1",
+        "fps": 24.0,
+        "frame_count": 397,
+        "cutoff_frame": 397,
+        "cutoff_seconds": 16.541666666666668,
+        "video_end_frame": 396,
+        "video_duration_seconds": 16.541666666666668,
+        "counting": "All stored Gaussians, including low-opacity records",
+        "memory": "Gaussian geometry+stored VAE features+retained Gaussian tokens;380bytes/Gaussian; excludes updater KV andDiT history",
+        "interpolation": "piecewise linear between snapshot first-display anchors",
+        "series": [
+          {
+            "variant": "baseline",
+            "label": "Full",
+            "anchors": [
+              {
+                "frame": 0,
+                "seconds": 0.0,
+                "primitives": 0,
+                "primitives_k": 0.0,
+                "memory_mib": 0.0,
+                "memory_step": null
+              },
+              {
+                "frame": 12,
+                "seconds": 0.5,
+                "primitives": 10240,
+                "primitives_k": 10.24,
+                "memory_mib": 3.7109375,
+                "memory_step": 0
+              },
+              {
+                "frame": 29,
+                "seconds": 1.2083333333333333,
+                "primitives": 12288,
+                "primitives_k": 12.288,
+                "memory_mib": 4.453125,
+                "memory_step": 1
+              },
+              {
+                "frame": 45,
+                "seconds": 1.875,
+                "primitives": 18560,
+                "primitives_k": 18.56,
+                "memory_mib": 6.72607421875,
+                "memory_step": 2
+              },
+              {
+                "frame": 61,
+                "seconds": 2.5416666666666665,
+                "primitives": 24544,
+                "primitives_k": 24.544,
+                "memory_mib": 8.8946533203125,
+                "memory_step": 3
+              },
+              {
+                "frame": 77,
+                "seconds": 3.2083333333333335,
+                "primitives": 28608,
+                "primitives_k": 28.608,
+                "memory_mib": 10.367431640625,
+                "memory_step": 4
+              },
+              {
+                "frame": 93,
+                "seconds": 3.875,
+                "primitives": 33920,
+                "primitives_k": 33.92,
+                "memory_mib": 12.29248046875,
+                "memory_step": 5
+              },
+              {
+                "frame": 109,
+                "seconds": 4.541666666666667,
+                "primitives": 39488,
+                "primitives_k": 39.488,
+                "memory_mib": 14.310302734375,
+                "memory_step": 6
+              },
+              {
+                "frame": 125,
+                "seconds": 5.208333333333333,
+                "primitives": 43072,
+                "primitives_k": 43.072,
+                "memory_mib": 15.609130859375,
+                "memory_step": 7
+              },
+              {
+                "frame": 141,
+                "seconds": 5.875,
+                "primitives": 45120,
+                "primitives_k": 45.12,
+                "memory_mib": 16.351318359375,
+                "memory_step": 8
+              },
+              {
+                "frame": 157,
+                "seconds": 6.541666666666667,
+                "primitives": 47168,
+                "primitives_k": 47.168,
+                "memory_mib": 17.093505859375,
+                "memory_step": 9
+              },
+              {
+                "frame": 173,
+                "seconds": 7.208333333333333,
+                "primitives": 49216,
+                "primitives_k": 49.216,
+                "memory_mib": 17.835693359375,
+                "memory_step": 10
+              },
+              {
+                "frame": 189,
+                "seconds": 7.875,
+                "primitives": 51264,
+                "primitives_k": 51.264,
+                "memory_mib": 18.577880859375,
+                "memory_step": 11
+              },
+              {
+                "frame": 205,
+                "seconds": 8.541666666666666,
+                "primitives": 54112,
+                "primitives_k": 54.112,
+                "memory_mib": 19.6099853515625,
+                "memory_step": 12
+              },
+              {
+                "frame": 221,
+                "seconds": 9.208333333333334,
+                "primitives": 56416,
+                "primitives_k": 56.416,
+                "memory_mib": 20.4449462890625,
+                "memory_step": 13
+              },
+              {
+                "frame": 237,
+                "seconds": 9.875,
+                "primitives": 58464,
+                "primitives_k": 58.464,
+                "memory_mib": 21.1871337890625,
+                "memory_step": 14
+              },
+              {
+                "frame": 253,
+                "seconds": 10.541666666666666,
+                "primitives": 61632,
+                "primitives_k": 61.632,
+                "memory_mib": 22.335205078125,
+                "memory_step": 15
+              },
+              {
+                "frame": 269,
+                "seconds": 11.208333333333334,
+                "primitives": 64544,
+                "primitives_k": 64.544,
+                "memory_mib": 23.3905029296875,
+                "memory_step": 16
+              },
+              {
+                "frame": 285,
+                "seconds": 11.875,
+                "primitives": 67680,
+                "primitives_k": 67.68,
+                "memory_mib": 24.5269775390625,
+                "memory_step": 17
+              },
+              {
+                "frame": 301,
+                "seconds": 12.541666666666666,
+                "primitives": 70496,
+                "primitives_k": 70.496,
+                "memory_mib": 25.5474853515625,
+                "memory_step": 18
+              },
+              {
+                "frame": 317,
+                "seconds": 13.208333333333334,
+                "primitives": 72544,
+                "primitives_k": 72.544,
+                "memory_mib": 26.2896728515625,
+                "memory_step": 19
+              },
+              {
+                "frame": 333,
+                "seconds": 13.875,
+                "primitives": 74592,
+                "primitives_k": 74.592,
+                "memory_mib": 27.0318603515625,
+                "memory_step": 20
+              },
+              {
+                "frame": 349,
+                "seconds": 14.541666666666666,
+                "primitives": 79584,
+                "primitives_k": 79.584,
+                "memory_mib": 28.8409423828125,
+                "memory_step": 21
+              },
+              {
+                "frame": 365,
+                "seconds": 15.208333333333334,
+                "primitives": 84256,
+                "primitives_k": 84.256,
+                "memory_mib": 30.5340576171875,
+                "memory_step": 22
+              },
+              {
+                "frame": 381,
+                "seconds": 15.875,
+                "primitives": 87392,
+                "primitives_k": 87.392,
+                "memory_mib": 31.6705322265625,
+                "memory_step": 23
+              },
+              {
+                "frame": 397,
+                "seconds": 16.541666666666668,
+                "primitives": 89440,
+                "primitives_k": 89.44,
+                "memory_mib": 32.4127197265625,
+                "memory_step": 24
+              }
+            ],
+            "displayed_final_primitives": 89440,
+            "unused_final_primitives": 91488
+          },
+          {
+            "variant": "no_refinement",
+            "label": "w/o Refinement",
+            "anchors": [
+              {
+                "frame": 0,
+                "seconds": 0.0,
+                "primitives": 0,
+                "primitives_k": 0.0,
+                "memory_mib": 0.0,
+                "memory_step": null
+              },
+              {
+                "frame": 12,
+                "seconds": 0.5,
+                "primitives": 10240,
+                "primitives_k": 10.24,
+                "memory_mib": 3.7109375,
+                "memory_step": 0
+              },
+              {
+                "frame": 29,
+                "seconds": 1.2083333333333333,
+                "primitives": 12288,
+                "primitives_k": 12.288,
+                "memory_mib": 4.453125,
+                "memory_step": 1
+              },
+              {
+                "frame": 45,
+                "seconds": 1.875,
+                "primitives": 19008,
+                "primitives_k": 19.008,
+                "memory_mib": 6.888427734375,
+                "memory_step": 2
+              },
+              {
+                "frame": 61,
+                "seconds": 2.5416666666666665,
+                "primitives": 25984,
+                "primitives_k": 25.984,
+                "memory_mib": 9.41650390625,
+                "memory_step": 3
+              },
+              {
+                "frame": 77,
+                "seconds": 3.2083333333333335,
+                "primitives": 31008,
+                "primitives_k": 31.008,
+                "memory_mib": 11.2371826171875,
+                "memory_step": 4
+              },
+              {
+                "frame": 93,
+                "seconds": 3.875,
+                "primitives": 38432,
+                "primitives_k": 38.432,
+                "memory_mib": 13.9276123046875,
+                "memory_step": 5
+              },
+              {
+                "frame": 109,
+                "seconds": 4.541666666666667,
+                "primitives": 45312,
+                "primitives_k": 45.312,
+                "memory_mib": 16.4208984375,
+                "memory_step": 6
+              },
+              {
+                "frame": 125,
+                "seconds": 5.208333333333333,
+                "primitives": 49760,
+                "primitives_k": 49.76,
+                "memory_mib": 18.0328369140625,
+                "memory_step": 7
+              },
+              {
+                "frame": 141,
+                "seconds": 5.875,
+                "primitives": 51808,
+                "primitives_k": 51.808,
+                "memory_mib": 18.7750244140625,
+                "memory_step": 8
+              },
+              {
+                "frame": 157,
+                "seconds": 6.541666666666667,
+                "primitives": 53856,
+                "primitives_k": 53.856,
+                "memory_mib": 19.5172119140625,
+                "memory_step": 9
+              },
+              {
+                "frame": 173,
+                "seconds": 7.208333333333333,
+                "primitives": 55904,
+                "primitives_k": 55.904,
+                "memory_mib": 20.2593994140625,
+                "memory_step": 10
+              },
+              {
+                "frame": 189,
+                "seconds": 7.875,
+                "primitives": 58112,
+                "primitives_k": 58.112,
+                "memory_mib": 21.0595703125,
+                "memory_step": 11
+              },
+              {
+                "frame": 205,
+                "seconds": 8.541666666666666,
+                "primitives": 62080,
+                "primitives_k": 62.08,
+                "memory_mib": 22.49755859375,
+                "memory_step": 12
+              },
+              {
+                "frame": 221,
+                "seconds": 9.208333333333334,
+                "primitives": 65088,
+                "primitives_k": 65.088,
+                "memory_mib": 23.587646484375,
+                "memory_step": 13
+              },
+              {
+                "frame": 237,
+                "seconds": 9.875,
+                "primitives": 68192,
+                "primitives_k": 68.192,
+                "memory_mib": 24.7125244140625,
+                "memory_step": 14
+              },
+              {
+                "frame": 253,
+                "seconds": 10.541666666666666,
+                "primitives": 73440,
+                "primitives_k": 73.44,
+                "memory_mib": 26.6143798828125,
+                "memory_step": 15
+              },
+              {
+                "frame": 269,
+                "seconds": 11.208333333333334,
+                "primitives": 80224,
+                "primitives_k": 80.224,
+                "memory_mib": 29.0728759765625,
+                "memory_step": 16
+              },
+              {
+                "frame": 285,
+                "seconds": 11.875,
+                "primitives": 86304,
+                "primitives_k": 86.304,
+                "memory_mib": 31.2762451171875,
+                "memory_step": 17
+              },
+              {
+                "frame": 301,
+                "seconds": 12.541666666666666,
+                "primitives": 90944,
+                "primitives_k": 90.944,
+                "memory_mib": 32.957763671875,
+                "memory_step": 18
+              },
+              {
+                "frame": 317,
+                "seconds": 13.208333333333334,
+                "primitives": 92992,
+                "primitives_k": 92.992,
+                "memory_mib": 33.699951171875,
+                "memory_step": 19
+              },
+              {
+                "frame": 333,
+                "seconds": 13.875,
+                "primitives": 95616,
+                "primitives_k": 95.616,
+                "memory_mib": 34.65087890625,
+                "memory_step": 20
+              },
+              {
+                "frame": 349,
+                "seconds": 14.541666666666666,
+                "primitives": 99840,
+                "primitives_k": 99.84,
+                "memory_mib": 36.181640625,
+                "memory_step": 21
+              },
+              {
+                "frame": 365,
+                "seconds": 15.208333333333334,
+                "primitives": 106144,
+                "primitives_k": 106.144,
+                "memory_mib": 38.4661865234375,
+                "memory_step": 22
+              },
+              {
+                "frame": 381,
+                "seconds": 15.875,
+                "primitives": 110944,
+                "primitives_k": 110.944,
+                "memory_mib": 40.2056884765625,
+                "memory_step": 23
+              },
+              {
+                "frame": 397,
+                "seconds": 16.541666666666668,
+                "primitives": 112992,
+                "primitives_k": 112.992,
+                "memory_mib": 40.9478759765625,
+                "memory_step": 24
+              }
+            ],
+            "displayed_final_primitives": 112992,
+            "unused_final_primitives": 115040
+          },
+          {
+            "variant": "no_adaptive_spawn",
+            "label": "w/o Adaptive Spawning",
+            "anchors": [
+              {
+                "frame": 0,
+                "seconds": 0.0,
+                "primitives": 0,
+                "primitives_k": 0.0,
+                "memory_mib": 0.0,
+                "memory_step": null
+              },
+              {
+                "frame": 12,
+                "seconds": 0.5,
+                "primitives": 10240,
+                "primitives_k": 10.24,
+                "memory_mib": 3.7109375,
+                "memory_step": 0
+              },
+              {
+                "frame": 29,
+                "seconds": 1.2083333333333333,
+                "primitives": 20480,
+                "primitives_k": 20.48,
+                "memory_mib": 7.421875,
+                "memory_step": 1
+              },
+              {
+                "frame": 45,
+                "seconds": 1.875,
+                "primitives": 30720,
+                "primitives_k": 30.72,
+                "memory_mib": 11.1328125,
+                "memory_step": 2
+              },
+              {
+                "frame": 61,
+                "seconds": 2.5416666666666665,
+                "primitives": 40960,
+                "primitives_k": 40.96,
+                "memory_mib": 14.84375,
+                "memory_step": 3
+              },
+              {
+                "frame": 77,
+                "seconds": 3.2083333333333335,
+                "primitives": 51200,
+                "primitives_k": 51.2,
+                "memory_mib": 18.5546875,
+                "memory_step": 4
+              },
+              {
+                "frame": 93,
+                "seconds": 3.875,
+                "primitives": 61440,
+                "primitives_k": 61.44,
+                "memory_mib": 22.265625,
+                "memory_step": 5
+              },
+              {
+                "frame": 109,
+                "seconds": 4.541666666666667,
+                "primitives": 71680,
+                "primitives_k": 71.68,
+                "memory_mib": 25.9765625,
+                "memory_step": 6
+              },
+              {
+                "frame": 125,
+                "seconds": 5.208333333333333,
+                "primitives": 81920,
+                "primitives_k": 81.92,
+                "memory_mib": 29.6875,
+                "memory_step": 7
+              },
+              {
+                "frame": 141,
+                "seconds": 5.875,
+                "primitives": 92160,
+                "primitives_k": 92.16,
+                "memory_mib": 33.3984375,
+                "memory_step": 8
+              },
+              {
+                "frame": 157,
+                "seconds": 6.541666666666667,
+                "primitives": 102400,
+                "primitives_k": 102.4,
+                "memory_mib": 37.109375,
+                "memory_step": 9
+              },
+              {
+                "frame": 173,
+                "seconds": 7.208333333333333,
+                "primitives": 112640,
+                "primitives_k": 112.64,
+                "memory_mib": 40.8203125,
+                "memory_step": 10
+              },
+              {
+                "frame": 189,
+                "seconds": 7.875,
+                "primitives": 122880,
+                "primitives_k": 122.88,
+                "memory_mib": 44.53125,
+                "memory_step": 11
+              },
+              {
+                "frame": 205,
+                "seconds": 8.541666666666666,
+                "primitives": 133120,
+                "primitives_k": 133.12,
+                "memory_mib": 48.2421875,
+                "memory_step": 12
+              },
+              {
+                "frame": 221,
+                "seconds": 9.208333333333334,
+                "primitives": 143360,
+                "primitives_k": 143.36,
+                "memory_mib": 51.953125,
+                "memory_step": 13
+              },
+              {
+                "frame": 237,
+                "seconds": 9.875,
+                "primitives": 153600,
+                "primitives_k": 153.6,
+                "memory_mib": 55.6640625,
+                "memory_step": 14
+              },
+              {
+                "frame": 253,
+                "seconds": 10.541666666666666,
+                "primitives": 163840,
+                "primitives_k": 163.84,
+                "memory_mib": 59.375,
+                "memory_step": 15
+              },
+              {
+                "frame": 269,
+                "seconds": 11.208333333333334,
+                "primitives": 174080,
+                "primitives_k": 174.08,
+                "memory_mib": 63.0859375,
+                "memory_step": 16
+              },
+              {
+                "frame": 285,
+                "seconds": 11.875,
+                "primitives": 184320,
+                "primitives_k": 184.32,
+                "memory_mib": 66.796875,
+                "memory_step": 17
+              },
+              {
+                "frame": 301,
+                "seconds": 12.541666666666666,
+                "primitives": 194560,
+                "primitives_k": 194.56,
+                "memory_mib": 70.5078125,
+                "memory_step": 18
+              },
+              {
+                "frame": 317,
+                "seconds": 13.208333333333334,
+                "primitives": 204800,
+                "primitives_k": 204.8,
+                "memory_mib": 74.21875,
+                "memory_step": 19
+              },
+              {
+                "frame": 333,
+                "seconds": 13.875,
+                "primitives": 215040,
+                "primitives_k": 215.04,
+                "memory_mib": 77.9296875,
+                "memory_step": 20
+              },
+              {
+                "frame": 349,
+                "seconds": 14.541666666666666,
+                "primitives": 225280,
+                "primitives_k": 225.28,
+                "memory_mib": 81.640625,
+                "memory_step": 21
+              },
+              {
+                "frame": 365,
+                "seconds": 15.208333333333334,
+                "primitives": 235520,
+                "primitives_k": 235.52,
+                "memory_mib": 85.3515625,
+                "memory_step": 22
+              },
+              {
+                "frame": 381,
+                "seconds": 15.875,
+                "primitives": 245760,
+                "primitives_k": 245.76,
+                "memory_mib": 89.0625,
+                "memory_step": 23
+              },
+              {
+                "frame": 397,
+                "seconds": 16.541666666666668,
+                "primitives": 256000,
+                "primitives_k": 256.0,
+                "memory_mib": 92.7734375,
+                "memory_step": 24
+              }
+            ],
+            "displayed_final_primitives": 256000,
+            "unused_final_primitives": 266240
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample_04",
+      "fps": 24.0,
+      "frame_count": 397,
+      "video": "assets/memory_ablations/sample_04.mp4",
+      "variants": [
+        {
+          "id": "baseline",
+          "crop": {
+            "x": 0,
+            "y": 36,
+            "width": 624,
+            "height": 360
+          }
+        },
+        {
+          "id": "no_refinement",
+          "crop": {
+            "x": 1248,
+            "y": 36,
+            "width": 624,
+            "height": 360
+          }
+        },
+        {
+          "id": "no_adaptive_spawn",
+          "crop": {
+            "x": 624,
+            "y": 36,
+            "width": 624,
+            "height": 360
+          }
+        }
+      ],
+      "growth": {
+        "schema": "l3g-online-ablation-growth-v1",
+        "fps": 24.0,
+        "frame_count": 397,
+        "cutoff_frame": 397,
+        "cutoff_seconds": 16.541666666666668,
+        "video_end_frame": 396,
+        "video_duration_seconds": 16.541666666666668,
+        "counting": "All stored Gaussians, including low-opacity records",
+        "memory": "Gaussian geometry+stored VAE features+retained Gaussian tokens;380bytes/Gaussian; excludes updater KV andDiT history",
+        "interpolation": "piecewise linear between snapshot first-display anchors",
+        "series": [
+          {
+            "variant": "baseline",
+            "label": "Full",
+            "anchors": [
+              {
+                "frame": 0,
+                "seconds": 0.0,
+                "primitives": 0,
+                "primitives_k": 0.0,
+                "memory_mib": 0.0,
+                "memory_step": null
+              },
+              {
+                "frame": 12,
+                "seconds": 0.5,
+                "primitives": 10240,
+                "primitives_k": 10.24,
+                "memory_mib": 3.7109375,
+                "memory_step": 0
+              },
+              {
+                "frame": 29,
+                "seconds": 1.2083333333333333,
+                "primitives": 13792,
+                "primitives_k": 13.792,
+                "memory_mib": 4.9981689453125,
+                "memory_step": 1
+              },
+              {
+                "frame": 45,
+                "seconds": 1.875,
+                "primitives": 18208,
+                "primitives_k": 18.208,
+                "memory_mib": 6.5985107421875,
+                "memory_step": 2
+              },
+              {
+                "frame": 61,
+                "seconds": 2.5416666666666665,
+                "primitives": 23904,
+                "primitives_k": 23.904,
+                "memory_mib": 8.6627197265625,
+                "memory_step": 3
+              },
+              {
+                "frame": 77,
+                "seconds": 3.2083333333333335,
+                "primitives": 27552,
+                "primitives_k": 27.552,
+                "memory_mib": 9.9847412109375,
+                "memory_step": 4
+              },
+              {
+                "frame": 93,
+                "seconds": 3.875,
+                "primitives": 29632,
+                "primitives_k": 29.632,
+                "memory_mib": 10.738525390625,
+                "memory_step": 5
+              },
+              {
+                "frame": 109,
+                "seconds": 4.541666666666667,
+                "primitives": 35904,
+                "primitives_k": 35.904,
+                "memory_mib": 13.011474609375,
+                "memory_step": 6
+              },
+              {
+                "frame": 125,
+                "seconds": 5.208333333333333,
+                "primitives": 38720,
+                "primitives_k": 38.72,
+                "memory_mib": 14.031982421875,
+                "memory_step": 7
+              },
+              {
+                "frame": 141,
+                "seconds": 5.875,
+                "primitives": 42688,
+                "primitives_k": 42.688,
+                "memory_mib": 15.469970703125,
+                "memory_step": 8
+              },
+              {
+                "frame": 157,
+                "seconds": 6.541666666666667,
+                "primitives": 44736,
+                "primitives_k": 44.736,
+                "memory_mib": 16.212158203125,
+                "memory_step": 9
+              },
+              {
+                "frame": 173,
+                "seconds": 7.208333333333333,
+                "primitives": 47328,
+                "primitives_k": 47.328,
+                "memory_mib": 17.1514892578125,
+                "memory_step": 10
+              },
+              {
+                "frame": 189,
+                "seconds": 7.875,
+                "primitives": 50528,
+                "primitives_k": 50.528,
+                "memory_mib": 18.3111572265625,
+                "memory_step": 11
+              },
+              {
+                "frame": 205,
+                "seconds": 8.541666666666666,
+                "primitives": 52576,
+                "primitives_k": 52.576,
+                "memory_mib": 19.0533447265625,
+                "memory_step": 12
+              },
+              {
+                "frame": 221,
+                "seconds": 9.208333333333334,
+                "primitives": 54624,
+                "primitives_k": 54.624,
+                "memory_mib": 19.7955322265625,
+                "memory_step": 13
+              },
+              {
+                "frame": 237,
+                "seconds": 9.875,
+                "primitives": 56672,
+                "primitives_k": 56.672,
+                "memory_mib": 20.5377197265625,
+                "memory_step": 14
+              },
+              {
+                "frame": 253,
+                "seconds": 10.541666666666666,
+                "primitives": 59936,
+                "primitives_k": 59.936,
+                "memory_mib": 21.7205810546875,
+                "memory_step": 15
+              },
+              {
+                "frame": 269,
+                "seconds": 11.208333333333334,
+                "primitives": 63232,
+                "primitives_k": 63.232,
+                "memory_mib": 22.9150390625,
+                "memory_step": 16
+              },
+              {
+                "frame": 285,
+                "seconds": 11.875,
+                "primitives": 65280,
+                "primitives_k": 65.28,
+                "memory_mib": 23.6572265625,
+                "memory_step": 17
+              },
+              {
+                "frame": 301,
+                "seconds": 12.541666666666666,
+                "primitives": 67840,
+                "primitives_k": 67.84,
+                "memory_mib": 24.5849609375,
+                "memory_step": 18
+              },
+              {
+                "frame": 317,
+                "seconds": 13.208333333333334,
+                "primitives": 70464,
+                "primitives_k": 70.464,
+                "memory_mib": 25.535888671875,
+                "memory_step": 19
+              },
+              {
+                "frame": 333,
+                "seconds": 13.875,
+                "primitives": 75168,
+                "primitives_k": 75.168,
+                "memory_mib": 27.2406005859375,
+                "memory_step": 20
+              },
+              {
+                "frame": 349,
+                "seconds": 14.541666666666666,
+                "primitives": 79104,
+                "primitives_k": 79.104,
+                "memory_mib": 28.6669921875,
+                "memory_step": 21
+              },
+              {
+                "frame": 365,
+                "seconds": 15.208333333333334,
+                "primitives": 83136,
+                "primitives_k": 83.136,
+                "memory_mib": 30.128173828125,
+                "memory_step": 22
+              },
+              {
+                "frame": 381,
+                "seconds": 15.875,
+                "primitives": 85344,
+                "primitives_k": 85.344,
+                "memory_mib": 30.9283447265625,
+                "memory_step": 23
+              },
+              {
+                "frame": 397,
+                "seconds": 16.541666666666668,
+                "primitives": 89760,
+                "primitives_k": 89.76,
+                "memory_mib": 32.5286865234375,
+                "memory_step": 24
+              }
+            ],
+            "displayed_final_primitives": 89760,
+            "unused_final_primitives": 94304
+          },
+          {
+            "variant": "no_refinement",
+            "label": "w/o Refinement",
+            "anchors": [
+              {
+                "frame": 0,
+                "seconds": 0.0,
+                "primitives": 0,
+                "primitives_k": 0.0,
+                "memory_mib": 0.0,
+                "memory_step": null
+              },
+              {
+                "frame": 12,
+                "seconds": 0.5,
+                "primitives": 10240,
+                "primitives_k": 10.24,
+                "memory_mib": 3.7109375,
+                "memory_step": 0
+              },
+              {
+                "frame": 29,
+                "seconds": 1.2083333333333333,
+                "primitives": 13792,
+                "primitives_k": 13.792,
+                "memory_mib": 4.9981689453125,
+                "memory_step": 1
+              },
+              {
+                "frame": 45,
+                "seconds": 1.875,
+                "primitives": 19680,
+                "primitives_k": 19.68,
+                "memory_mib": 7.1319580078125,
+                "memory_step": 2
+              },
+              {
+                "frame": 61,
+                "seconds": 2.5416666666666665,
+                "primitives": 28192,
+                "primitives_k": 28.192,
+                "memory_mib": 10.2166748046875,
+                "memory_step": 3
+              },
+              {
+                "frame": 77,
+                "seconds": 3.2083333333333335,
+                "primitives": 36512,
+                "primitives_k": 36.512,
+                "memory_mib": 13.2318115234375,
+                "memory_step": 4
+              },
+              {
+                "frame": 93,
+                "seconds": 3.875,
+                "primitives": 43936,
+                "primitives_k": 43.936,
+                "memory_mib": 15.9222412109375,
+                "memory_step": 5
+              },
+              {
+                "frame": 109,
+                "seconds": 4.541666666666667,
+                "primitives": 53824,
+                "primitives_k": 53.824,
+                "memory_mib": 19.505615234375,
+                "memory_step": 6
+              },
+              {
+                "frame": 125,
+                "seconds": 5.208333333333333,
+                "primitives": 58368,
+                "primitives_k": 58.368,
+                "memory_mib": 21.15234375,
+                "memory_step": 7
+              },
+              {
+                "frame": 141,
+                "seconds": 5.875,
+                "primitives": 63616,
+                "primitives_k": 63.616,
+                "memory_mib": 23.05419921875,
+                "memory_step": 8
+              },
+              {
+                "frame": 157,
+                "seconds": 6.541666666666667,
+                "primitives": 65664,
+                "primitives_k": 65.664,
+                "memory_mib": 23.79638671875,
+                "memory_step": 9
+              },
+              {
+                "frame": 173,
+                "seconds": 7.208333333333333,
+                "primitives": 68832,
+                "primitives_k": 68.832,
+                "memory_mib": 24.9444580078125,
+                "memory_step": 10
+              },
+              {
+                "frame": 189,
+                "seconds": 7.875,
+                "primitives": 73184,
+                "primitives_k": 73.184,
+                "memory_mib": 26.5216064453125,
+                "memory_step": 11
+              },
+              {
+                "frame": 205,
+                "seconds": 8.541666666666666,
+                "primitives": 75232,
+                "primitives_k": 75.232,
+                "memory_mib": 27.2637939453125,
+                "memory_step": 12
+              },
+              {
+                "frame": 221,
+                "seconds": 9.208333333333334,
+                "primitives": 77280,
+                "primitives_k": 77.28,
+                "memory_mib": 28.0059814453125,
+                "memory_step": 13
+              },
+              {
+                "frame": 237,
+                "seconds": 9.875,
+                "primitives": 80864,
+                "primitives_k": 80.864,
+                "memory_mib": 29.3048095703125,
+                "memory_step": 14
+              },
+              {
+                "frame": 253,
+                "seconds": 10.541666666666666,
+                "primitives": 86624,
+                "primitives_k": 86.624,
+                "memory_mib": 31.3922119140625,
+                "memory_step": 15
+              },
+              {
+                "frame": 269,
+                "seconds": 11.208333333333334,
+                "primitives": 94144,
+                "primitives_k": 94.144,
+                "memory_mib": 34.117431640625,
+                "memory_step": 16
+              },
+              {
+                "frame": 285,
+                "seconds": 11.875,
+                "primitives": 100256,
+                "primitives_k": 100.256,
+                "memory_mib": 36.3323974609375,
+                "memory_step": 17
+              },
+              {
+                "frame": 301,
+                "seconds": 12.541666666666666,
+                "primitives": 105376,
+                "primitives_k": 105.376,
+                "memory_mib": 38.1878662109375,
+                "memory_step": 18
+              },
+              {
+                "frame": 317,
+                "seconds": 13.208333333333334,
+                "primitives": 111200,
+                "primitives_k": 111.2,
+                "memory_mib": 40.2984619140625,
+                "memory_step": 19
+              },
+              {
+                "frame": 333,
+                "seconds": 13.875,
+                "primitives": 118816,
+                "primitives_k": 118.816,
+                "memory_mib": 43.0584716796875,
+                "memory_step": 20
+              },
+              {
+                "frame": 349,
+                "seconds": 14.541666666666666,
+                "primitives": 125728,
+                "primitives_k": 125.728,
+                "memory_mib": 45.5633544921875,
+                "memory_step": 21
+              },
+              {
+                "frame": 365,
+                "seconds": 15.208333333333334,
+                "primitives": 132576,
+                "primitives_k": 132.576,
+                "memory_mib": 48.0450439453125,
+                "memory_step": 22
+              },
+              {
+                "frame": 381,
+                "seconds": 15.875,
+                "primitives": 137632,
+                "primitives_k": 137.632,
+                "memory_mib": 49.8773193359375,
+                "memory_step": 23
+              },
+              {
+                "frame": 397,
+                "seconds": 16.541666666666668,
+                "primitives": 144864,
+                "primitives_k": 144.864,
+                "memory_mib": 52.4981689453125,
+                "memory_step": 24
+              }
+            ],
+            "displayed_final_primitives": 144864,
+            "unused_final_primitives": 151232
+          },
+          {
+            "variant": "no_adaptive_spawn",
+            "label": "w/o Adaptive Spawning",
+            "anchors": [
+              {
+                "frame": 0,
+                "seconds": 0.0,
+                "primitives": 0,
+                "primitives_k": 0.0,
+                "memory_mib": 0.0,
+                "memory_step": null
+              },
+              {
+                "frame": 12,
+                "seconds": 0.5,
+                "primitives": 10240,
+                "primitives_k": 10.24,
+                "memory_mib": 3.7109375,
+                "memory_step": 0
+              },
+              {
+                "frame": 29,
+                "seconds": 1.2083333333333333,
+                "primitives": 20480,
+                "primitives_k": 20.48,
+                "memory_mib": 7.421875,
+                "memory_step": 1
+              },
+              {
+                "frame": 45,
+                "seconds": 1.875,
+                "primitives": 30720,
+                "primitives_k": 30.72,
+                "memory_mib": 11.1328125,
+                "memory_step": 2
+              },
+              {
+                "frame": 61,
+                "seconds": 2.5416666666666665,
+                "primitives": 40960,
+                "primitives_k": 40.96,
+                "memory_mib": 14.84375,
+                "memory_step": 3
+              },
+              {
+                "frame": 77,
+                "seconds": 3.2083333333333335,
+                "primitives": 51200,
+                "primitives_k": 51.2,
+                "memory_mib": 18.5546875,
+                "memory_step": 4
+              },
+              {
+                "frame": 93,
+                "seconds": 3.875,
+                "primitives": 61440,
+                "primitives_k": 61.44,
+                "memory_mib": 22.265625,
+                "memory_step": 5
+              },
+              {
+                "frame": 109,
+                "seconds": 4.541666666666667,
+                "primitives": 71680,
+                "primitives_k": 71.68,
+                "memory_mib": 25.9765625,
+                "memory_step": 6
+              },
+              {
+                "frame": 125,
+                "seconds": 5.208333333333333,
+                "primitives": 81920,
+                "primitives_k": 81.92,
+                "memory_mib": 29.6875,
+                "memory_step": 7
+              },
+              {
+                "frame": 141,
+                "seconds": 5.875,
+                "primitives": 92160,
+                "primitives_k": 92.16,
+                "memory_mib": 33.3984375,
+                "memory_step": 8
+              },
+              {
+                "frame": 157,
+                "seconds": 6.541666666666667,
+                "primitives": 102400,
+                "primitives_k": 102.4,
+                "memory_mib": 37.109375,
+                "memory_step": 9
+              },
+              {
+                "frame": 173,
+                "seconds": 7.208333333333333,
+                "primitives": 112640,
+                "primitives_k": 112.64,
+                "memory_mib": 40.8203125,
+                "memory_step": 10
+              },
+              {
+                "frame": 189,
+                "seconds": 7.875,
+                "primitives": 122880,
+                "primitives_k": 122.88,
+                "memory_mib": 44.53125,
+                "memory_step": 11
+              },
+              {
+                "frame": 205,
+                "seconds": 8.541666666666666,
+                "primitives": 133120,
+                "primitives_k": 133.12,
+                "memory_mib": 48.2421875,
+                "memory_step": 12
+              },
+              {
+                "frame": 221,
+                "seconds": 9.208333333333334,
+                "primitives": 143360,
+                "primitives_k": 143.36,
+                "memory_mib": 51.953125,
+                "memory_step": 13
+              },
+              {
+                "frame": 237,
+                "seconds": 9.875,
+                "primitives": 153600,
+                "primitives_k": 153.6,
+                "memory_mib": 55.6640625,
+                "memory_step": 14
+              },
+              {
+                "frame": 253,
+                "seconds": 10.541666666666666,
+                "primitives": 163840,
+                "primitives_k": 163.84,
+                "memory_mib": 59.375,
+                "memory_step": 15
+              },
+              {
+                "frame": 269,
+                "seconds": 11.208333333333334,
+                "primitives": 174080,
+                "primitives_k": 174.08,
+                "memory_mib": 63.0859375,
+                "memory_step": 16
+              },
+              {
+                "frame": 285,
+                "seconds": 11.875,
+                "primitives": 184320,
+                "primitives_k": 184.32,
+                "memory_mib": 66.796875,
+                "memory_step": 17
+              },
+              {
+                "frame": 301,
+                "seconds": 12.541666666666666,
+                "primitives": 194560,
+                "primitives_k": 194.56,
+                "memory_mib": 70.5078125,
+                "memory_step": 18
+              },
+              {
+                "frame": 317,
+                "seconds": 13.208333333333334,
+                "primitives": 204800,
+                "primitives_k": 204.8,
+                "memory_mib": 74.21875,
+                "memory_step": 19
+              },
+              {
+                "frame": 333,
+                "seconds": 13.875,
+                "primitives": 215040,
+                "primitives_k": 215.04,
+                "memory_mib": 77.9296875,
+                "memory_step": 20
+              },
+              {
+                "frame": 349,
+                "seconds": 14.541666666666666,
+                "primitives": 225280,
+                "primitives_k": 225.28,
+                "memory_mib": 81.640625,
+                "memory_step": 21
+              },
+              {
+                "frame": 365,
+                "seconds": 15.208333333333334,
+                "primitives": 235520,
+                "primitives_k": 235.52,
+                "memory_mib": 85.3515625,
+                "memory_step": 22
+              },
+              {
+                "frame": 381,
+                "seconds": 15.875,
+                "primitives": 245760,
+                "primitives_k": 245.76,
+                "memory_mib": 89.0625,
+                "memory_step": 23
+              },
+              {
+                "frame": 397,
+                "seconds": 16.541666666666668,
+                "primitives": 256000,
+                "primitives_k": 256.0,
+                "memory_mib": 92.7734375,
+                "memory_step": 24
+              }
+            ],
+            "displayed_final_primitives": 256000,
+            "unused_final_primitives": 266240
+          }
+        ]
+      }
+    }
+  ]
+}

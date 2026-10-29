@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="L3G-World: real-time infinite world generation with latent 3D Gaussian memory. Explore the method, generated worlds, and persistent 3D memories.">
+  <meta name="theme-color" content="#f7f9f8">
+  <title>L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <script src="reconstruction-embed.js" defer></script>
+  <script src="memory-ablations.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contributions">Skip to content</a>
+<header class="navigation">
+  <a class="wordmark gradient-text" href="#top" aria-label="L3G-World home">L3G-World</a>
+  <!-- Edit navigation labels and destination section IDs here. -->
+  <nav aria-label="Main navigation">
+    <a href="#tldr">Overview</a>
+    <a href="#efficiency">Efficiency</a>
+    <a href="#consistency">Consistency</a>
+    <a href="#worlds">World Generation</a>
+    <a href="#method">Method &amp; Results</a>
+  </nav>
+  
+</header>
+<main id="top">
+  <section class="hero wrap" id="overview">
+    <h1 class="gradient-text">L3G-World</h1>
+    <p class="paper-title gradient-text">Real-Time Infinite World Generation<br>with Latent 3D Gaussian Memory</p>
+    <div class="authors" aria-label="Authors">
+      <div class="author-row">
+      <a class="author" href="https://wlsguur.github.io/" target="_blank" rel="noopener noreferrer">Jinhyeok Choi<sup>1,*</sup></a>
+      <button class="placeholder author" data-name="JoungBin Lee’s website">JoungBin Lee<sup>1,*</sup></button>
+      <a class="author" href="https://icetea-cv.github.io/" target="_blank" rel="noopener noreferrer">Jongmin Lee<sup>1</sup></a>
+      <button class="placeholder author" data-name="Minkyeong Jeon’s website">Minkyeong Jeon<sup>1</sup></button>
+      <a class="author" href="https://rlawldud53.github.io/" target="_blank" rel="noopener noreferrer">Jiyoung Kim<sup>1</sup></a>
+      <button class="placeholder author" data-name="Kaeun Han’s website">Kaeun Han<sup>2</sup></button>
+      </div>
+      <div class="author-row">
+      <button class="placeholder author" data-name="Yoonjin Yoon’s website">Yoonjin Yoon<sup>1,3,†</sup></button>
+      <a class="author" href="https://cvlab.kaist.ac.kr/members/faculty" target="_blank" rel="noopener noreferrer">Seungryong Kim<sup>1,†</sup></a>
+      </div>
+    </div>
+    <p class="affiliations"><span><sup>1</sup> KAIST AI</span><span><sup>2</sup> Ewha Womans University</span><span><sup>3</sup> KAIST Urban AI Institute</span></p>
+    <p class="author-notes"><sup>*</sup> Equal contribution &nbsp; · &nbsp; <sup>†</sup> Corresponding authors</p>
+    <div class="resources">
+      <button class="resource primary placeholder" data-name="Paper"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v5h4M10 12h5M10 16h5"/></svg>Paper<span>↗</span></button>
+      <button class="resource placeholder" data-name="arXiv"><img class="resource-icon" src="assets/icons/arxiv-logomark-small-white.svg" alt="" aria-hidden="true">arXiv<span>↗</span></button>
+      <a class="resource" href="https://github.com/cvlab-kaist/L3G-World.git" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg>Code<span>↗</span></a>
+      <button class="resource placeholder" data-name="Models"><svg viewBox="0 0 24 24"><path d="m12 3 9 5v9l-9 5-9-5V8zM3 8l9 5 9-5M12 13v9"/></svg>Models<span>↗</span></button>
+      <button class="resource" id="open-bibtex" aria-haspopup="dialog" aria-controls="bibtex-dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H6v6l-3 2 3 2v6h2M16 4h2v6l3 2-3 2v6h-2"/></svg>BibTeX<span>↗</span></button>
+    </div>
+    <div class="text-box tldr" id="tldr"><p><strong class="gradient-text">TL;DR</strong> L3G-World couples L3G-Mem and L3G-Gen to generate consistent worlds over long horizons. Its 3D memory grows adaptively with explored scene extent, while direct rendering into the diffusion latent space enables real-time generation.</p></div>
+    <figure class="overview-figure"><div class="overview-figure-frame"><img style="display:block;width:100%;height:auto" src="assets/paper/overview.webp" alt="Overview of the L3G-Mem and L3G-Gen world-generation pipeline" width="3000" height="1278" loading="lazy"></div></figure>
+
+  </section>
+
+  <section class="contributions wrap" id="contributions" aria-label="Key contributions">
+    <article><h3>Adaptive Memory Update</h3><p>L3G-Mem spawns compact Gaussians for newly explored regions and refines existing ones on revisits. Memory grows with scene extent rather than the number of generated frames, allowing GPU memory use to level off during repeated exploration.</p></article>
+    <article><h3>Direct Latent Rendering</h3><p>Each Gaussian stores VAE latents that render directly into the diffusion latent space, bypassing RGB rendering and VAE re-encoding. Fast memory update and rendering enable real-time generation with few-step distillation.</p></article>
+    <article><h3>Consistent World Generation</h3><p>L3G-Mem updates the persistent 3D memory from each generated video chunk. L3G-Gen then uses that memory to condition subsequent chunk generation. This closed loop preserves a consistent world throughout long-horizon exploration.</p></article>
+  </section>
+
+  <section class="section efficiency-section" id="efficiency">
+    <div class="wrap">
+      <section class="efficiency-subsection scalable-generation" id="scalable-generation">
+        <div class="section-heading"><h3>Scalable Generation</h3></div>
+    <div class="line-charts hero-efficiency" aria-label="Long-horizon efficiency"><figure><figcaption><h3>Peak GPU Memory</h3></figcaption><img src="assets/charts/process_peak_gib.svg" alt="Peak GPU Memory versus video duration for L3G-World, Spatia, WorldKV, and Yume 1.5." loading="lazy"></figure><figure><figcaption><h3>Generation Throughput</h3></figcaption><img src="assets/charts/cumulative_fps.svg" alt="Cumulative FPS versus video duration for L3G-World, Spatia, WorldKV, and Yume 1.5." loading="lazy"></figure></div>
+      </section>
+      <section class="efficiency-subsection memory-efficiency" id="efficient-3d-memory">
+      <div class="section-heading"><h3>Efficient 3D Memory</h3></div>
+      <div class="trace-stats efficiency-callouts" aria-label="Improvements over the best baseline for each metric"><div><strong class="gradient-text" data-improvement="memory">N×</strong><span>lower memory</span><small>3D Memory Cost</small></div><div><strong class="gradient-text" data-improvement="reconstruction">N×</strong><span>faster memory write</span><small>Memory Reconstruction</small></div><div><strong class="gradient-text" data-improvement="vae">N×</strong><span>faster memory read</span><small>Memory Rendering</small></div></div>
+      <div class="benchmark-panel">
+        <div class="efficiency-grid">
+          <figure><h4>Primitive Count</h4><img src="assets/charts/average_primitives.svg" alt="Mean primitive count in thousands; lower is better." loading="lazy"></figure>
+          <figure><h4>3D Memory Cost</h4><img src="assets/charts/average_memory.svg" alt="Mean 3D memory cost in MiB; lower is better." loading="lazy"></figure>
+          <figure><h4>Memory Reconstruction</h4><img src="assets/charts/average_reconstruction.svg" alt="Mean memory reconstruction FPS; higher is better." loading="lazy"></figure>
+          <figure><h4>Memory Rendering</h4><img src="assets/charts/average_vae.svg" alt="Mean memory rendering FPS; higher is better." loading="lazy"></figure>
+        </div>
+      </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="section wrap consistency" id="consistency">
+    <div class="section-heading"><h3>Long-Horizon Consistency</h3></div>
+    <p class="consistency-description">Given a single input image, L3G-World autoregressively generates minute-long videos while maintaining scene consistency. At each autoregressive step, L3G-Mem adaptively updates the persistent 3D memory from each generated video chunk, ensuring that the memory grows with the scene extent rather than the generated stream.</p>
+    <div id="long-horizon-gallery"><p class="loading">Loading videos…</p></div>
+  </section>
+
+  <section class="section applications" id="worlds"><div class="wrap">
+    <div class="section-heading"><h3>Diverse Camera Trajectories</h3></div>
+    <p id="worlds-description" class="section-description">Spatially-aligned memory condition enables video generation along disverse input camera trajectories.</p>
+    <!-- Edit subsection headings and descriptions directly below. -->
+    <div id="all-galleries">
+      <section class="scenario-section" id="scenario-single" data-category="single" aria-labelledby="scenario-single-heading">
+        <div class="scenario-heading"><h3 id="scenario-single-heading">Image-to-World</h3></div>
+        <p id="scenario-single-description" class="section-description">Starting from a single image, L3G-World generates new views along an input camera trajectory while updating a 3D memory.</p>
+        <div class="scenario-gallery" data-scene-gallery><p class="loading">Loading videos…</p></div>
+      </section>
+      <section class="scenario-section" id="scenario-multi" data-category="multi" aria-labelledby="scenario-multi-heading">
+        <div class="scenario-heading"><h3 id="scenario-multi-heading">Multi-View-to-World</h3></div>
+        <p id="scenario-multi-description" class="section-description">A small set of input views initializes a 3D scene memory. L3G-World uses this memory to explore beyond the observed viewpoints.</p>
+        <div class="scenario-gallery" data-scene-gallery><p class="loading">Loading videos…</p></div>
+      </section>
+      <section class="scenario-section" id="scenario-stitch" data-category="stitch" data-first-scene="atlas_anchor__cherry_lane-chalet_window" aria-labelledby="scenario-stitch-heading">
+        <div class="scenario-heading"><h3 id="scenario-stitch-heading">Spatially Anchored World Generation</h3></div>
+        <p id="scenario-stitch-description" class="section-description">L3G-Mem reconstructs image anchors placed at designated camera poses into a shared 3D memory. This memory provides spatial context for generating views around and between the anchored content. For example, two image anchors initialize separate memories that are combined in a common coordinate system, allowing L3G-World to generate a continuous scene connecting the two worlds.</p>
+        <div class="scenario-gallery" data-scene-gallery><p class="loading">Loading videos…</p></div>
+      </section>
+      <section class="scenario-section" id="scenario-diverse" data-category="diverse" data-first-scene="lyra_explore__13_temple_robot" aria-labelledby="scenario-diverse-heading">
+        <div class="scenario-heading"><h3 id="scenario-diverse-heading">World Exploration</h3></div>
+        <p id="scenario-diverse-description" class="section-description">L3G-World generalizes to a diverse environments with input camera trajectories, using 3D memory to connect newly generated views to earlier observations.</p>
+        <div class="scenario-gallery" data-scene-gallery><p class="loading">Loading videos…</p></div>
+      </section>
+    </div>
+    <section class="scenario-section" id="online-reconstruction"><div class="scenario-heading"><h3>Online Reconstruction</h3></div><p class="online_reconstruction-description">L3G-Mem reconstructs video streams in real-time, acheiving 47 FPS on a single A100 GPU. It spawns new Gaussians in newly observed regions, while refining existing ones to maintain a consistent 3D representation. The Gaussians also store VAE latents, which can be directly rendered to the target views with efficient rendering pipeline.</p><iframe id="online-reconstruction-viewer" title="Online video reconstruction with RGB and VAE memory renderings" src="embeds/online/index.html" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></section>
+    <section class="scenario-section" id="optimization"><div class="scenario-heading"><h3>Generative Scene Reconstruction</h3></div><p class="reconstruction-description">From one or a few input images, L3G-World generates new views while updating a persistent 3D Gaussian memory. We optimize the 3D Gaussian memory with the generated views, turning the memory into an explorable 3D reconstruction.</p><iframe id="reconstruction-viewer" title="Explore 3D scenes generated by L3G-World" src="embeds/reconstruction/embed.html" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></section>
+  </div></section>
+
+  <section class="section wrap abstract-section" id="abstract">
+    <div class="text-box abstract-box"><h3>Abstract</h3>
+      <p>Interactive world models generate visual content conditioned on user actions, yet maintaining spatial consistency over long-horizon exploration in real time remains challenging.
+Existing approaches rely on either temporal context or explicit 3D memory, both of which scale poorly because memory grows with the length of the generated stream. Moreover, explicit 3D memories condition latent video generators by re-encoding RGB renderings, which precludes real-time generation. In this paper, we introduce a <b>L</b>atent <b>3</b>D <b>G</b>aussian Memory <b>(L3G)</b> that combines the efficiency of feed-forward reconstruction with a compact, rapidly renderable scene representation. Building on this memory, we propose <b>L3G-World</b>, in which a memory updater and a video diffusion transformer (DiT) alternate autoregressively to generate spatially consistent worlds. The memory updater spawns Gaussians in newly observed regions and refines existing ones, so that the memory grows with scene extent rather than stream length. Each Gaussian further stores a VAE latent feature, allowing the memory to be rendered directly into the DiT's latent space without VAE re-encoding. Experiments show that <b>L3G-World</b> achieves state-of-the-art generation quality and long-horizon spatial consistency, with up to 38.6× fewer 3D primitives, 3.2× faster memory updates, and 359× faster memory rendering relative to the most efficient prior 3D-memory baseline for each metric, enabling real-time world generation at 9 FPS.</p>
+    </div>
+  </section>
+
+  <section class="section wrap method" id="method">
+    <div class="section-heading"><h3>Methodology</h3></div>
+    <article class="method-detail" id="l3g-mem"><h3>L3G-Mem</h3>
+      <p id="l3g-mem-description" class="section-description">L3G-Mem reconstructs compact 3D Gaussian memory from observed or generated views. It spawns Gaussians in newly observed regions and refines existing geometry and features as new views arrive. Each Gaussian stores a VAE feature for direct latent rendering.</p>
+      <button class="figure-button architecture-figure-button" data-figure="archi_mem" aria-label="Enlarge L3G-Mem architecture"><img alt="L3G-Mem architecture" loading="lazy"><span>Enlarge ↗</span></button></article>
+    <section class="method-ablation" id="adaptive-memory-update">
+      <h3>Adaptive Memory Update</h3>
+      <p class="ablation-description">L3G-Mem adds Gaussians where the current memory lacks coverage and refines existing Gaussians as new observations arrive. Selective spawning avoids redundant primitives, while residual refinement corrects geometry instead of preserving its errors. Together, they improve reconstruction quality with a compact memory that grows with the explored scene.</p>
+      <div class="benchmark-panel ablation-chart-panel"><div class="efficiency-grid">
+        <figure><h4>Gaussian Count</h4><img src="assets/charts/memory_ablation_gaussians.svg" alt="DL3DV ablation: Full 41K Gaussians, without refinement 45K, without adaptive spawn 75K." loading="lazy"></figure>
+        <figure><h4>Novel View Synthesis Quality</h4><img src="assets/charts/memory_ablation_psnr.svg" alt="DL3DV ablation PSNR: Full 16.52, without refinement 15.52, without adaptive spawn 16.26 dB." loading="lazy"></figure>
+      </div></div>
+      <div id="memory-ablation-gallery"><p class="loading">Loading reconstruction comparisons…</p></div>
+    </section>
+    <section class="method-ablation" id="latent-gaussian-memory">
+      <h3>Latent 3D Gaussian Memory</h3>
+      <p class="ablation-description">Each Gaussian stores a VAE latent feature, so the memory renders directly into the video generator’s conditioning space. This removes the RGB-rendering and VAE-encoding round trip. In the L3G-Mem ablation, direct latent rendering reaches 943.6 FPS compared with 2.97 FPS without VAE lifting, while also improving latent reconstruction quality.</p>
+      <div class="benchmark-panel ablation-chart-panel latent-ablation-panel">
+        <div class="latent-chart-row">
+          <div class="latent-speed-group">
+            <h4>Memory Readout Speed</h4>
+            <figure class="latent-speed-chart"><img src="assets/charts/memory_ablation_vae.svg" alt="VAE rendering: L3G-Mem Full 943.6 FPS, without VAE lifting 2.97 FPS." loading="lazy"></figure>
+          </div>
+          <div class="latent-quality-group">
+            <h4>Novel View Synthesis Quality</h4>
+            <div class="efficiency-grid latent-quality-grid">
+              <figure><img src="assets/charts/memory_ablation_vae_mse.svg" alt="VAE mean squared error: L3G-Mem Full 0.177, without VAE lifting 0.570; lower is better." loading="lazy"></figure>
+              <figure><img src="assets/charts/memory_ablation_vae_cosine.svg" alt="VAE cosine similarity: L3G-Mem Full 0.782, without VAE lifting 0.467; higher is better." loading="lazy"></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <article class="method-detail" id="l3g-gen"><h3>L3G-Gen</h3>
+      <p id="l3g-gen-description" class="section-description">L3G-Gen generates video chunks conditioned on text, camera trajectories, and latent renderings of 3D memory. Each generated chunk returns to L3G-Mem to update the scene before the next chunk is generated.</p>
+      <button class="figure-button architecture-figure-button" data-figure="archi_gen" aria-label="Enlarge L3G-Gen architecture"><img alt="L3G-Gen architecture" loading="lazy"><span>Enlarge ↗</span></button></article>
+    <div class="results-heading" id="quantitative-results"><h3>Comparison with Baselines</h3></div>
+    <figure class="comparison-figure"><button class="figure-button comparison-figure-button" aria-label="Enlarge qualitative comparison with baselines"><img src="assets/paper/comparison_qual.webp" alt="Qualitative comparison of L3G-World and baseline world-generation models" width="3000" height="2108" loading="lazy"><span>Enlarge ↗</span></button></figure>
+    <div class="segmented dataset-tabs" role="tablist" aria-label="Evaluation dataset">
+      <button id="dataset-tab-dl3dv" class="active" type="button" role="tab" data-dataset="dl3dv" aria-controls="dataset-panel-dl3dv" aria-selected="true" tabindex="0">DL3DV</button>
+      <button id="dataset-tab-re10k" type="button" role="tab" data-dataset="re10k" aria-controls="dataset-panel-re10k" aria-selected="false" tabindex="-1">RE10K</button>
+    </div>
+    <div id="quality-tables"></div>
+    <section class="ablation-block" id="ablations"><div class="results-heading"><h2>Ablations</h2></div>
+      <div class="ablation-result"><h3>L3G-Mem</h3><p class="table-scroll-hint">Scroll horizontally for all metrics →</p><div class="table-scroll" tabindex="0" role="region" aria-label="L3G-Mem ablation results; scroll for all metrics"><table id="ablation-memory-table"></table></div></div>
+      <div class="ablation-result"><h3>L3G-World</h3><p class="table-scroll-hint">Scroll horizontally for all metrics →</p><div class="table-scroll" tabindex="0" role="region" aria-label="L3G-World ablation results; scroll for all metrics"><table id="ablation-world-table"></table></div></div>
+    </section>
+  </section>
+  <section class="section wrap citation" id="bibtex">
+    <div class="section-heading"><h2>BibTeX</h2></div>
+    <div class="bibtex-box"><button class="outline-button copy-bibtex" data-copy-target="bibtex-code">Copy BibTeX</button><pre><code id="bibtex-code"></code></pre></div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><a class="wordmark" href="#top">L3G-World</a><p>Real-Time Infinite World Generation with Latent 3D Gaussian Memory</p></div></footer>
+<dialog id="scene-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><div><span class="mini-label" id="dialog-category"></span><h2 id="dialog-title"></h2></div><button class="icon-button" id="close-scene" aria-label="Close scene">✕</button></div><div class="dialog-tools"><label for="variant-select" id="variant-label" hidden>Accepted version <select id="variant-select"></select></label></div><div class="input-strip" id="dialog-inputs"></div><div class="dialog-videos"><div class="video-pane"><span>Generated Video</span><video id="modal-generated" muted playsinline preload="metadata"></video></div><div class="video-pane"><span>3D Memory Update</span><div class="memory-viewport"><video id="modal-memory" muted playsinline preload="metadata"></video></div></div><div class="video-pane"><span>Memory Render · RGB Preview</span><video id="modal-condition" muted playsinline preload="metadata"></video></div></div><div id="modal-growth" class="stage-growth-panel" hidden><figure class="growth-chart"><figcaption class="stage-label">Gaussian primitives (K)</figcaption><canvas id="modal-growth-primitives" class="scene-growth" width="1664" height="720" data-metric="primitives_k" role="img" aria-label="Gaussian primitive growth"></canvas></figure><figure class="growth-chart"><figcaption class="stage-label">3D memory (MiB)</figcaption><canvas id="modal-growth-memory" class="scene-growth" width="1664" height="720" data-metric="memory_mib" role="img" aria-label="3D memory growth"></canvas></figure></div><details class="prompt-details"><summary>Text prompt</summary><p id="modal-prompt"></p></details></dialog>
+<dialog id="figure-dialog"><button class="icon-button" id="close-figure" aria-label="Close figure">✕</button><img id="large-figure" alt="Enlarged paper architecture figure"></dialog>
+<dialog id="bibtex-dialog" aria-labelledby="bibtex-dialog-title"><div class="dialog-header"><h2 id="bibtex-dialog-title">BibTeX</h2><button class="icon-button" id="close-bibtex" aria-label="Close BibTeX">✕</button></div><div class="bibtex-box"><button class="outline-button copy-bibtex" data-copy-target="bibtex-modal-code">Copy BibTeX</button><pre><code id="bibtex-modal-code"></code></pre></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body></html>

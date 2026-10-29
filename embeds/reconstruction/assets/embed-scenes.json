@@ -1,0 +1,669 @@
+{
+  "scenes": [
+    {
+      "id": "atlas__japanese_garden_v2",
+      "title": "An illustrated Japanese garden",
+      "category": "single",
+      "count": 300000,
+      "sh_degree": 3,
+      "input_count": 1,
+      "bytes": 8111001,
+      "splat": "assets/embed300k/atlas__japanese_garden_v2/scene.spz",
+      "splat_name": "scene.spz",
+      "poster": "assets/embed300k/atlas__japanese_garden_v2/poster.webp",
+      "camera": {
+        "matrix": [
+          0.9999978714229639,
+          -0.002139704437227924,
+          -2.342810697810138e-05,
+          0.0,
+          -0.0021396996991956516,
+          -0.9999975398755365,
+          0.00016174928054596505,
+          0.0,
+          -2.3525547772860483e-05,
+          -0.00016169895981012886,
+          -1.000000114900507,
+          0.0,
+          0.0005794684265019532,
+          -0.00036707432500898186,
+          0.0014911778968473362,
+          1.0
+        ],
+        "projection_matrix": [
+          1.6598951551649306,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.8058349194169856,
+          0.0,
+          0.0,
+          -0.000825791131882303,
+          0.0037446313974809353,
+          -1.0000159040058436,
+          -1.0,
+          0.0,
+          0.0,
+          -0.020000159040058436,
+          0.0
+        ],
+        "fov_y_degrees": 39.232150496992,
+        "near": 0.01,
+        "far": 1257.5548095703125,
+        "up": [
+          -0.0021396996991956516,
+          -0.9999975398755365,
+          0.00016174928054596505
+        ],
+        "scene_scale": 1.083104408461899,
+        "median_visible_depth": 1.083104408461899,
+        "target": [
+          0.0006049490510062193,
+          -0.00019193746879492786,
+          1.0845957108079922
+        ],
+        "intrinsics": [
+          [
+            690.5163845486111,
+            0.0,
+            416.3435291108631
+          ],
+          [
+            0.0,
+            673.4003806600765,
+            240.89871153539542
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "source_resolution": [
+          832,
+          480
+        ]
+      },
+      "mesh_transform": "identity",
+      "world_basis": "original Gaussian memory coordinates",
+      "encoding": "SPZ v3, quantized, all300K Gaussians and SHdegree3 retained",
+      "hashes": {
+        "spz": "dff8b3d59798188ed6292be1822302760190e33f9c16f6a06f1571762a7fcccb",
+        "source_ply": "1f3bfd3fe537862aca53ecbddbee2c5c5f5310ea4b50784a0c3b8c37b7d44e14",
+        "fit_cameras": "d5fe3f3286d2cf37879948ea492be629028d749263547bba1dafcdc557e31aac",
+        "rendered_video": "dbd61f1b965e0fd012dc5395d8e99ae9b56eece2078051a6ea6d4f332c74ab6f"
+      }
+    },
+    {
+      "id": "atlas__cathedral_v2",
+      "title": "The living cathedral",
+      "category": "single",
+      "count": 300000,
+      "sh_degree": 3,
+      "input_count": 1,
+      "bytes": 8637551,
+      "splat": "assets/embed300k/atlas__cathedral_v2/scene.spz",
+      "splat_name": "scene.spz",
+      "poster": "assets/embed300k/atlas__cathedral_v2/poster.webp",
+      "camera": {
+        "matrix": [
+          0.9999998124905956,
+          -0.0003999176172359678,
+          -0.0005141243791998974,
+          0.0,
+          -0.00040022692945978046,
+          -0.9999995042984213,
+          -0.0006033290797901984,
+          0.0,
+          -0.0005138345725839277,
+          0.0006035345637975089,
+          -0.9999997346454951,
+          0.0,
+          0.0017019398701547419,
+          -0.0003775074011092479,
+          -0.002959917620695297,
+          1.0
+        ],
+        "projection_matrix": [
+          0.9894449143182663,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.6758054356996703,
+          0.0,
+          0.0,
+          0.0011786203535777418,
+          0.0027369285116389808,
+          -1.0000045789749266,
+          -1.0,
+          0.0,
+          0.0,
+          -0.020000045789749267,
+          0.0
+        ],
+        "fov_y_degrees": 61.65141992852717,
+        "near": 0.01,
+        "far": 4367.7998046875,
+        "up": [
+          -0.00040022692945978046,
+          -0.9999995042984213,
+          -0.0006033290797901984
+        ],
+        "scene_scale": 1.5936333774261453,
+        "median_visible_depth": 1.5936333774261453,
+        "target": [
+          0.0025208037954999865,
+          -0.0013393202264072872,
+          1.590673036927654
+        ],
+        "intrinsics": [
+          [
+            411.6090843563988,
+            0.0,
+            415.50969393291166
+          ],
+          [
+            0.0,
+            402.1933045679209,
+            240.65686284279337
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "source_resolution": [
+          832,
+          480
+        ]
+      },
+      "mesh_transform": "identity",
+      "world_basis": "original Gaussian memory coordinates",
+      "encoding": "SPZ v3, quantized, all300K Gaussians and SHdegree3 retained",
+      "hashes": {
+        "spz": "82cf26de0d0b16b747ae993048754b078c91576955fd51c62c77a645203a2360",
+        "source_ply": "1cc5e1d6f45c0cf75064e387ad315a39fa0cf8b74dfb048e029d5ca7534f6f21",
+        "fit_cameras": "0ca36a03e4d4ea3fe94a1d2868080ce87b8196b14e39490eb4a6cabab5324c11",
+        "rendered_video": "9febced24f48018063fed7ff71234d9ab673c2f1a66d9c6146961e1823a33793"
+      }
+    },
+    {
+      "id": "atlas__living_room_impasto_v2",
+      "title": "A painted afternoon",
+      "category": "single",
+      "count": 300000,
+      "sh_degree": 3,
+      "input_count": 1,
+      "bytes": 9557899,
+      "splat": "assets/embed300k/atlas__living_room_impasto_v2/scene.spz",
+      "splat_name": "scene.spz",
+      "poster": "assets/embed300k/atlas__living_room_impasto_v2/poster.webp",
+      "camera": {
+        "matrix": [
+          0.9999951818176402,
+          0.0030127966631001623,
+          -0.0007267107491203059,
+          0.0,
+          0.0030124110840152644,
+          -0.9999953056611386,
+          -0.0005315683820333174,
+          0.0,
+          -0.0007283977737034453,
+          0.0005293761479905506,
+          -0.9999995739907972,
+          0.0,
+          -0.0003075600102681374,
+          -0.0002870101333069713,
+          -0.000248610147092287,
+          1.0
+        ],
+        "projection_matrix": [
+          1.3785894484747023,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.33206861846301,
+          0.0,
+          0.0,
+          -0.000383952307322577,
+          0.0034959235158908974,
+          -1.0000416287652816,
+          -1.0,
+          0.0,
+          0.0,
+          -0.020000416287652818,
+          0.0
+        ],
+        "fov_y_degrees": 46.41967979223844,
+        "near": 0.01,
+        "far": 480.447021484375,
+        "up": [
+          0.0030124110840152644,
+          -0.9999953056611386,
+          -0.0005315683820333174
+        ],
+        "scene_scale": 1.0524339242383633,
+        "median_visible_depth": 1.0524339242383633,
+        "target": [
+          0.00045903051711706686,
+          -0.0008441435501348551,
+          1.0521848657447341
+        ],
+        "intrinsics": [
+          [
+            573.4932105654761,
+            0.0,
+            416.15972415984623
+          ],
+          [
+            0.0,
+            559.6964684311224,
+            240.8390216438138
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "source_resolution": [
+          832,
+          480
+        ]
+      },
+      "mesh_transform": "identity",
+      "world_basis": "original Gaussian memory coordinates",
+      "encoding": "SPZ v3, quantized, all300K Gaussians and SHdegree3 retained",
+      "hashes": {
+        "spz": "649c2844b46d904c269e54c2d243fc0ac66bdbcc2bf88930f083062460343c2b",
+        "source_ply": "77d7896a30ee65e42e4f43e6638874e2401122fb32cb92c9ec75f7b865fdb1b1",
+        "fit_cameras": "601fbcc17ca97cc058d3e4297af9b4c1af4896698cb8995ae5fe12bffd0c3d5a",
+        "rendered_video": "92fe40109d9065446df398d4144e6ea064b1efd6edf861db9559f61e7f2d2d66"
+      }
+    },
+    {
+      "id": "atlas__octopus_close_up",
+      "title": "A world made of yarn",
+      "category": "single",
+      "count": 300000,
+      "sh_degree": 3,
+      "input_count": 1,
+      "bytes": 8911957,
+      "splat": "assets/embed300k/atlas__octopus_close_up/scene.spz",
+      "splat_name": "scene.spz",
+      "poster": "assets/embed300k/atlas__octopus_close_up/poster.webp",
+      "camera": {
+        "matrix": [
+          0.9999996943017669,
+          4.044302969329293e-05,
+          -0.0008010639406869637,
+          0.0,
+          3.9763447308088985e-05,
+          -0.9999997802170937,
+          -0.0008478054964153171,
+          0.0,
+          -0.0008008378944229119,
+          0.0008477732390949417,
+          -0.9999993602225519,
+          0.0,
+          0.0004969037901509307,
+          -0.00014925723105834428,
+          -0.00300441198009056,
+          1.0
+        ],
+        "projection_matrix": [
+          1.5794628082759796,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.679165379530718,
+          0.0,
+          0.0,
+          -0.0022132510230654656,
+          0.0031817170227466107,
+          -1.0000082603835523,
+          -1.0,
+          0.0,
+          0.0,
+          -0.020000082603835522,
+          0.0
+        ],
+        "fov_y_degrees": 40.93623480138518,
+        "near": 0.01,
+        "far": 2421.205078125,
+        "up": [
+          3.9763447308088985e-05,
+          -0.9999997802170937,
+          -0.0008478054964153171
+        ],
+        "scene_scale": 1.0953262108712714,
+        "median_visible_depth": 1.0953262108712714,
+        "target": [
+          0.001374082526571306,
+          -0.0010778454807142711,
+          1.0923210981261728
+        ],
+        "intrinsics": [
+          [
+            657.0565282428075,
+            0.0,
+            416.92071242559524
+          ],
+          [
+            0.0,
+            642.9996910873724,
+            240.7636120854592
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "source_resolution": [
+          832,
+          480
+        ]
+      },
+      "mesh_transform": "identity",
+      "world_basis": "original Gaussian memory coordinates",
+      "encoding": "SPZ v3, quantized, all300K Gaussians and SHdegree3 retained",
+      "hashes": {
+        "spz": "f7f68357a81d46f37f0c8952cf851a7cd6c14b44990c6403e2ffa21a8031bd00",
+        "source_ply": "f55cd0115e0fbe15c194e6e657a678a3cc65990efb404e97ddb07e47c3fabd04",
+        "fit_cameras": "a75a4c85f701b2b16918f00ec9dda374e710d9cdc6a1483bf5233453a217bab7",
+        "rendered_video": "ebf33af2175d55dcbbfe3cdf5fcca68cbe9f21dc122c52b5497351f7438c4cbf"
+      }
+    },
+    {
+      "id": "atlas__mid_century_modern_v2",
+      "title": "Mid-century modern",
+      "category": "single",
+      "count": 300000,
+      "sh_degree": 3,
+      "input_count": 1,
+      "bytes": 8797606,
+      "splat": "assets/embed300k/atlas__mid_century_modern_v2/scene.spz",
+      "splat_name": "scene.spz",
+      "poster": "assets/embed300k/atlas__mid_century_modern_v2/poster.webp",
+      "camera": {
+        "matrix": [
+          0.9999894108197988,
+          0.00425542684399977,
+          -0.0016933181477082591,
+          0.0,
+          0.004255119453116018,
+          -0.9999908096482277,
+          -0.00018524764589648892,
+          0.0,
+          -0.001693713882194296,
+          0.00017804179749400902,
+          -0.9999984722400463,
+          0.0,
+          -0.0006654924080867509,
+          -9.687803447045616e-05,
+          -0.002667828036964924,
+          1.0
+        ],
+        "projection_matrix": [
+          1.5545384240528894,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.6519532495615437,
+          0.0,
+          0.0,
+          2.9185461619563036e-05,
+          0.0024245904416455577,
+          -1.0000040619150412,
+          -1.0,
+          0.0,
+          0.0,
+          -0.02000004061915041,
+          0.0
+        ],
+        "fov_y_degrees": 41.32096774065656,
+        "near": 0.01,
+        "far": 4923.7958984375,
+        "up": [
+          0.004255119453116018,
+          -0.9999908096482277,
+          -0.00018524764589648892
+        ],
+        "scene_scale": 1.0390740849045936,
+        "median_visible_depth": 1.0390740849045936,
+        "target": [
+          0.0010944017941444941,
+          -0.0002818766522763126,
+          1.036404669411853
+        ],
+        "intrinsics": [
+          [
+            646.687984406002,
+            0.0,
+            415.98785884796627
+          ],
+          [
+            0.0,
+            636.4687798947705,
+            240.5819017059949
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "source_resolution": [
+          832,
+          480
+        ]
+      },
+      "mesh_transform": "identity",
+      "world_basis": "original Gaussian memory coordinates",
+      "encoding": "SPZ v3, quantized, all300K Gaussians and SHdegree3 retained",
+      "hashes": {
+        "spz": "ac02e6a4eab86923818bb87d1b396ca563c34b276dbefc30eb82d192123c42b5",
+        "source_ply": "83717a55abe280de8eeabd2849dcdc10fccda072b13594920499e1df90531787",
+        "fit_cameras": "f7450770b64c180ed66ba61f2f1ecbf96c0a201456125fd122d684b354ca63b5",
+        "rendered_video": "44906b6eb4e503d15e8d9788a4619c0b8963a06f62b964dcb2ec63105562e50f"
+      }
+    },
+    {
+      "id": "atlas__cafe_v2",
+      "title": "A corner caf\u00e9",
+      "category": "single",
+      "count": 300000,
+      "sh_degree": 3,
+      "input_count": 1,
+      "bytes": 8866459,
+      "splat": "assets/embed300k/atlas__cafe_v2/scene.spz",
+      "splat_name": "scene.spz",
+      "poster": "assets/embed300k/atlas__cafe_v2/poster.webp",
+      "camera": {
+        "matrix": [
+          0.9999999791552123,
+          -0.0003183221416604645,
+          -0.00024185639030425792,
+          0.0,
+          -0.000318553369980041,
+          -0.9999996386828239,
+          -0.0009565899125301143,
+          0.0,
+          -0.00024137579879108186,
+          0.0009566662369119904,
+          -0.999999606010052,
+          0.0,
+          -0.0009051646419237963,
+          -9.371577815710637e-05,
+          -0.0014678695938130431,
+          1.0
+        ],
+        "projection_matrix": [
+          1.3757958790612599,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.4072406794749153,
+          0.0,
+          0.0,
+          0.0023821270655072224,
+          0.004083750199298519,
+          -1.000004600874931,
+          -1.0,
+          0.0,
+          0.0,
+          -0.02000004600874931,
+          0.0
+        ],
+        "fov_y_degrees": 45.11730489942773,
+        "near": 0.01,
+        "far": 4347.00927734375,
+        "up": [
+          -0.000318553369980041,
+          -0.9999996386828239,
+          -0.0009565899125301143
+        ],
+        "scene_scale": 0.9653776030387831,
+        "median_visible_depth": 0.9653776030387831,
+        "target": [
+          -0.0006721458518552902,
+          -0.001017259936855336,
+          0.9639093530958984
+        ],
+        "intrinsics": [
+          [
+            572.3310856894841,
+            0.0,
+            415.009035140749
+          ],
+          [
+            0.0,
+            577.7377630739796,
+            240.98010004783163
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "source_resolution": [
+          832,
+          480
+        ]
+      },
+      "mesh_transform": "identity",
+      "world_basis": "original Gaussian memory coordinates",
+      "encoding": "SPZ v3, quantized, all300K Gaussians and SHdegree3 retained",
+      "hashes": {
+        "spz": "39c248044682ad8c6cd4acff9c78c6d36d376ffae9ab329757ab4fd76eaeceb1",
+        "source_ply": "df8e92a3980e8af984c0747b5dffdfbc8494fb23fc9741bea0f6d3d196baea8f",
+        "fit_cameras": "9acdc5019130c3f910b6ca5f98623df090910b1325b26ea0bf022b55f23e6015",
+        "rendered_video": "864747db7ea5587ed7e9aab80626e1117a36fb742168c84feb6c5110c07dcb99"
+      }
+    },
+    {
+      "id": "dl3dv_sample_04",
+      "title": "Furniture showroom",
+      "category": "multi",
+      "count": 300000,
+      "sh_degree": 3,
+      "input_count": 4,
+      "bytes": 8509380,
+      "splat": "assets/embed300k/dl3dv_sample_04/scene.spz",
+      "splat_name": "scene.spz",
+      "poster": "assets/embed300k/dl3dv_sample_04/poster.webp",
+      "camera": {
+        "matrix": [
+          0.9999993401743744,
+          -0.0010925580696352364,
+          0.0004648768676152835,
+          0.0,
+          -0.0010917911377434173,
+          -0.9999979347620709,
+          -0.0016454750991636879,
+          0.0,
+          0.0004666072539224102,
+          0.001644966856497385,
+          -0.9999985788443648,
+          0.0,
+          0.00030268597851150654,
+          0.0002319780071453349,
+          -0.00026971949632430915,
+          1.0
+        ],
+        "projection_matrix": [
+          1.0399809337797619,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.763229681521046,
+          0.0,
+          0.0,
+          0.0008286370171440849,
+          0.0025426125039860192,
+          -1.0000234437078954,
+          -1.0,
+          0.0,
+          0.0,
+          -0.020000234437078955,
+          0.0
+        ],
+        "fov_y_degrees": 59.118706871645244,
+        "near": 0.01,
+        "far": 853.1173706054688,
+        "up": [
+          -0.0010917911377434173,
+          -0.9999979347620709,
+          -0.0016454750991636879
+        ],
+        "scene_scale": 0.6422299489948762,
+        "median_visible_depth": 0.6422299489948762,
+        "target": [
+          3.0168256242778203e-06,
+          -0.0008244689732012424,
+          0.6419593167898409
+        ],
+        "intrinsics": [
+          [
+            432.6320684523809,
+            0.0,
+            415.65528700086804
+          ],
+          [
+            0.0,
+            423.175123565051,
+            240.61022700095663
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "source_resolution": [
+          832,
+          480
+        ]
+      },
+      "mesh_transform": "identity",
+      "world_basis": "original Gaussian memory coordinates",
+      "encoding": "SPZ v3, quantized, all300K Gaussians and SHdegree3 retained",
+      "hashes": {
+        "spz": "fde56bc936740ee700af7a21f3b564d1ba1691837ec6924b18e95f4873085873",
+        "source_ply": "7eabfd308a29625454ef2bd357aa731e0dc0165a74028a42c2a2b306bef52c27",
+        "fit_cameras": "18532bde5510c59bff4424c870c666eaed09d33c206cb88c3e719d75ddf9e91a",
+        "rendered_video": "32917f3f21bc0facc4075acae9515425dbf16dd4421798a3283851b4539870ad"
+      }
+    }
+  ]
+}

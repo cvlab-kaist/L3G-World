@@ -1,0 +1,126 @@
+[
+  {
+    "id": "dl3dv_sample_04",
+    "scene_id": "dl3dv_sample_04",
+    "title": "Furniture showroom",
+    "category": "multi",
+    "source": "DL3DV",
+    "experiment": "dl3dv_multiview_20261026",
+    "prompt": "The video presents a spacious, well-lit furniture showroom with a modern, neutral aesthetic. A large, L-shaped sectional sofa in off-white fabric dominates the center, arranged around a round, rustic wood coffee table. The sofa rests on a textured, beige area rug, which contrasts with the polished white floor accented by brown geometric patterns. A sleek, white barrel chair sits nearby, complementing the sofa\u2019s softness. Tall, gold-toned floor lamps with spherical bulbs cast a warm glow, enhancing the ambient lighting from overhead fixtures. In the background, dark wood shelving units display decorative items and framed art, while large windows reveal a parking lot outside. A tall potted plant adds a touch of greenery, and a bed set is visible further back, indicating a multi-room display. The overall atmosphere is clean, inviting, and curated for browsing.",
+    "frames": 209,
+    "original_frames": 161,
+    "native_fps": 48,
+    "playback_rate": 1,
+    "input_count": 4,
+    "inputs": [
+      "assets/multiview/dl3dv_sample_04/input_00.webp",
+      "assets/multiview/dl3dv_sample_04/input_01.webp",
+      "assets/multiview/dl3dv_sample_04/input_02.webp",
+      "assets/multiview/dl3dv_sample_04/input_03.webp"
+    ],
+    "poster": "assets/multiview/dl3dv_sample_04/input_00.webp",
+    "generated": "assets/multiview/dl3dv_sample_04/generated.mp4",
+    "memory": "assets/multiview/dl3dv_sample_04/memory_continuous.mp4",
+    "memory_poster": "assets/multiview/dl3dv_sample_04/memory_continuous_poster.webp",
+    "memory_montage": false,
+    "condition": null,
+    "preview_speed_segments": [
+      {
+        "start": 1.0,
+        "end": 3.3541666666666665,
+        "multiplier": 2
+      }
+    ],
+    "variants": [
+      {
+        "id": "dl3dv_sample_04",
+        "scene_id": "dl3dv_sample_04",
+        "title": "Furniture showroom",
+        "category": "multi",
+        "source": "DL3DV",
+        "experiment": "dl3dv_multiview_20261026",
+        "prompt": "The video presents a spacious, well-lit furniture showroom with a modern, neutral aesthetic. A large, L-shaped sectional sofa in off-white fabric dominates the center, arranged around a round, rustic wood coffee table. The sofa rests on a textured, beige area rug, which contrasts with the polished white floor accented by brown geometric patterns. A sleek, white barrel chair sits nearby, complementing the sofa\u2019s softness. Tall, gold-toned floor lamps with spherical bulbs cast a warm glow, enhancing the ambient lighting from overhead fixtures. In the background, dark wood shelving units display decorative items and framed art, while large windows reveal a parking lot outside. A tall potted plant adds a touch of greenery, and a bed set is visible further back, indicating a multi-room display. The overall atmosphere is clean, inviting, and curated for browsing.",
+        "frames": 209,
+        "original_frames": 161,
+        "native_fps": 48,
+        "playback_rate": 1,
+        "input_count": 4,
+        "inputs": [
+          "assets/multiview/dl3dv_sample_04/input_00.webp",
+          "assets/multiview/dl3dv_sample_04/input_01.webp",
+          "assets/multiview/dl3dv_sample_04/input_02.webp",
+          "assets/multiview/dl3dv_sample_04/input_03.webp"
+        ],
+        "poster": "assets/multiview/dl3dv_sample_04/input_00.webp",
+        "generated": "assets/multiview/dl3dv_sample_04/generated.mp4",
+        "memory": "assets/multiview/dl3dv_sample_04/memory_continuous.mp4",
+        "memory_poster": "assets/multiview/dl3dv_sample_04/memory_continuous_poster.webp",
+        "memory_montage": false,
+        "condition": null,
+        "preview_speed_segments": [
+          {
+            "start": 1.0,
+            "end": 3.3541666666666665,
+            "multiplier": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dl3dv_sample_03",
+    "scene_id": "dl3dv_sample_03",
+    "title": "Urban park",
+    "category": "multi",
+    "source": "DL3DV",
+    "experiment": "dl3dv_multiview_20261026",
+    "prompt": "A continuous camera-controlled video reveals a sun-drenched urban park centered on a bronze statue of George Washington, standing atop a dark granite pedestal inscribed with his name and title. The statue, clad in historical military attire and holding a hat, faces away from the camera in the final view, revealing an engraved Masonic symbol. Surrounding the monument is a vast, meticulously manicured lawn of vibrant green grass, bisected by light-colored concrete pathways. Mature trees with dense foliage cast dappled shadows across the grass and paths. In the background, a grand, classical-style stone building with green-tiled domes and columns dominates the frame, flanked by modern glass-and-steel skyscrapers. Bright, direct sunlight creates strong highlights and long shadows, with lens flares visible in some shots, illuminating the scene under a clear blue sky with scattered white clouds.",
+    "frames": 161,
+    "original_frames": 161,
+    "native_fps": 40,
+    "playback_rate": 1,
+    "input_count": 4,
+    "inputs": [
+      "assets/multiview/dl3dv_sample_03/input_00.webp",
+      "assets/multiview/dl3dv_sample_03/input_01.webp",
+      "assets/multiview/dl3dv_sample_03/input_02.webp",
+      "assets/multiview/dl3dv_sample_03/input_03.webp"
+    ],
+    "poster": "assets/multiview/dl3dv_sample_03/input_00.webp",
+    "generated": "assets/multiview/dl3dv_sample_03/generated_40fps.mp4",
+    "memory": "assets/multiview/dl3dv_sample_03/memory_continuous.mp4",
+    "memory_poster": "assets/multiview/dl3dv_sample_03/memory_continuous_poster.webp",
+    "memory_montage": false,
+    "condition": null,
+    "preview_speed_segments": [],
+    "variants": [
+      {
+        "id": "dl3dv_sample_03",
+        "scene_id": "dl3dv_sample_03",
+        "title": "Urban park",
+        "category": "multi",
+        "source": "DL3DV",
+        "experiment": "dl3dv_multiview_20261026",
+        "prompt": "A continuous camera-controlled video reveals a sun-drenched urban park centered on a bronze statue of George Washington, standing atop a dark granite pedestal inscribed with his name and title. The statue, clad in historical military attire and holding a hat, faces away from the camera in the final view, revealing an engraved Masonic symbol. Surrounding the monument is a vast, meticulously manicured lawn of vibrant green grass, bisected by light-colored concrete pathways. Mature trees with dense foliage cast dappled shadows across the grass and paths. In the background, a grand, classical-style stone building with green-tiled domes and columns dominates the frame, flanked by modern glass-and-steel skyscrapers. Bright, direct sunlight creates strong highlights and long shadows, with lens flares visible in some shots, illuminating the scene under a clear blue sky with scattered white clouds.",
+        "frames": 161,
+        "original_frames": 161,
+        "native_fps": 40,
+        "playback_rate": 1,
+        "input_count": 4,
+        "inputs": [
+          "assets/multiview/dl3dv_sample_03/input_00.webp",
+          "assets/multiview/dl3dv_sample_03/input_01.webp",
+          "assets/multiview/dl3dv_sample_03/input_02.webp",
+          "assets/multiview/dl3dv_sample_03/input_03.webp"
+        ],
+        "poster": "assets/multiview/dl3dv_sample_03/input_00.webp",
+        "generated": "assets/multiview/dl3dv_sample_03/generated_40fps.mp4",
+        "memory": "assets/multiview/dl3dv_sample_03/memory_continuous.mp4",
+        "memory_poster": "assets/multiview/dl3dv_sample_03/memory_continuous_poster.webp",
+        "memory_montage": false,
+        "condition": null,
+        "preview_speed_segments": []
+      }
+    ]
+  }
+]

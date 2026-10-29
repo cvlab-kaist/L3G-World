@@ -1,0 +1,24 @@
+{
+  "id": "f70a9c0afac7",
+  "scene_id": "lyra_explore__04_waterside_temple",
+  "source_scene": "lyra_explore__04_waterside_temple",
+  "memory": "assets/scenes/f70a9c0afac7/memory_enhanced.mp4",
+  "memory_poster": "assets/scenes/f70a9c0afac7/memory_enhanced_poster.webp",
+  "memory_montage": false,
+  "frames": 161,
+  "fps": 24.0,
+  "duration_seconds": 6.708333333333333,
+  "settings": {
+    "width": 832,
+    "height": 480,
+    "frustum_scale": 3.0,
+    "path_thickness_pixels": 4,
+    "frustum_thickness_pixels": 4,
+    "outline_pixels": 2,
+    "renderer_version": 1
+  },
+  "render_seconds": 0.85,
+  "original_overview_camera": "overview_camera.json",
+  "snapshots_rendered": 3,
+  "note": "Original causal Gaussian snapshots and original fixed overview camera; camera glyph size only is enlarged 3x. Camera positions/rotations are unchanged. Trail and frustum use true 3D projection. Native frame count/FPS preserved; causal snapshot changes occur at their saved availability frames."
+}

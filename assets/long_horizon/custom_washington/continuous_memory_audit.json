@@ -1,0 +1,2671 @@
+{
+  "scene_id": "custom_washington",
+  "accepted": [
+    "20261026T024329_cba64ffa",
+    "20261026T024700_788be3c4",
+    "20261026T025207_1b1af923",
+    "20261026T025622_ce031f23",
+    "20261026T030144_e3ed8877",
+    "20261026T030601_ca7e00bd",
+    "20261026T031124_2424fcef",
+    "20261026T031539_1d55afb0",
+    "20261026T032055_b97c3c08",
+    "20261026T032511_a058f9a2",
+    "20261026T033026_4e789362",
+    "20261026T033443_1581b756"
+  ],
+  "sources": [
+    {
+      "path": "memory_before.npz",
+      "sha256": "b1ece7822aad54832ee3b06c2ac2da58a8db58d9f1d48ca74e1b9ac724fea4cb",
+      "primitives": 10240
+    },
+    {
+      "path": "memory_after.npz",
+      "sha256": "d5cfa41bd1a1d9423617364d1f0f14d8b3599a4c96cca4f0ec3c2e04e6d24b02",
+      "primitives": 19072
+    },
+    {
+      "path": "memory_after.npz",
+      "sha256": "797a02d2c3f9b5f76d73d2b1682e646e90e7416b84f28876602468165cb610c3",
+      "primitives": 21120
+    },
+    {
+      "path": "memory_after.npz",
+      "sha256": "6ee9d4327669fa2d43bde42ca92c40a7319d6e47963486a0a59dc0cb0ae6d0d0",
+      "primitives": 35936
+    },
+    {
+      "path": "memory_after.npz",
+      "sha256": "77b32e78f7b72fc9f05d17cac37ec8080921c0674bee0f36c09081be2efc92e8",
+      "primitives": 44800
+    },
+    {
+      "path": "memory_after.npz",
+      "sha256": "29b181b1427d0f19c244f0d635ab6b434d7be20a567f30d3b54ff4d72a85ea1d",
+      "primitives": 54592
+    },
+    {
+      "path": "memory_after.npz",
+      "sha256": "7ca81bced91e1e22ce1cbb166bed05cb147541bb8be8e6761e5d3fe24b7ae998",
+      "primitives": 77088
+    },
+    {
+      "path": "memory_after.npz",
+      "sha256": "7fdc23009364f95fb0c904f4d2d14cb5dd2229591055ae328f945596309f72ab",
+      "primitives": 92896
+    },
+    {
+      "path": "memory_after.npz",
+      "sha256": "6b70a925faa058d86d844519f1de072d2589c0a537c4625293667c8657125bd5",
+      "primitives": 100672
+    },
+    {
+      "path": "memory_after.npz",
+      "sha256": "280c71fbec7dc64311ffbdab040f3fb90d3ae2cd3f3618f3daa4bffe9612516c",
+      "primitives": 109440
+    },
+    {
+      "path": "memory_after.npz",
+      "sha256": "86fdaf767bd2f4d7e4c0d6933c9bf41928b1e1ed799a9251d12ffef391ef8e2e",
+      "primitives": 135808
+    },
+    {
+      "path": "memory_after.npz",
+      "sha256": "2911cfc6a84140db3c07d32b76d5a0263f6ae69237008357e1c370d7e174327e",
+      "primitives": 144352
+    },
+    {
+      "path": "memory_after.npz",
+      "sha256": "62ff9936c0999c35769eac2b33880cd354cc5f23cae41c4643ae17a9c8f8a9c8",
+      "primitives": 162464
+    }
+  ],
+  "camera_source": "cameras.npz",
+  "coordinate_gauge": "Existing exported world-space raw Gaussian centers/radii and matching cameras; no additional scaling",
+  "observer_policy": "One fixed camera derived from final accepted map and entire accepted path",
+  "overview_c2w": [
+    [
+      0.8516583167045438,
+      0.19172870409669995,
+      -0.48776860867975397,
+      1.2697140961338147
+    ],
+    [
+      0.0,
+      0.9306830844693977,
+      0.36582645650981543,
+      -1.195624328363617
+    ],
+    [
+      0.5240974256643347,
+      -0.3115591441571374,
+      0.7926239891046001,
+      -1.3866587059039719
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "overview_K": [
+    [
+      760.0,
+      0.0,
+      416.0
+    ],
+    [
+      0.0,
+      760.0,
+      240.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "scene_radius": 1.7372611648650298,
+  "observer_constant": true,
+  "cumulative_trajectory": true,
+  "all_accepted_camera_prefixes_match": true,
+  "all_memory_boundaries_exact": true,
+  "memory_update_policy": "Snapshot 0 before any generated update; snapshot n starts at source frame 80*n",
+  "output_width": 832,
+  "output_height": 480,
+  "output_fps": 24,
+  "output_frames": 361,
+  "source_frames": 961,
+  "frames": [
+    {
+      "output_frame": 0,
+      "source_frame": 0,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 0
+    },
+    {
+      "output_frame": 1,
+      "source_frame": 1,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 1
+    },
+    {
+      "output_frame": 2,
+      "source_frame": 2,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 2
+    },
+    {
+      "output_frame": 3,
+      "source_frame": 3,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 3
+    },
+    {
+      "output_frame": 4,
+      "source_frame": 4,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 4
+    },
+    {
+      "output_frame": 5,
+      "source_frame": 5,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 5
+    },
+    {
+      "output_frame": 6,
+      "source_frame": 6,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 6
+    },
+    {
+      "output_frame": 7,
+      "source_frame": 7,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 7
+    },
+    {
+      "output_frame": 8,
+      "source_frame": 8,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 8
+    },
+    {
+      "output_frame": 9,
+      "source_frame": 9,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 9
+    },
+    {
+      "output_frame": 10,
+      "source_frame": 10,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 10
+    },
+    {
+      "output_frame": 11,
+      "source_frame": 11,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 11
+    },
+    {
+      "output_frame": 12,
+      "source_frame": 12,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 12
+    },
+    {
+      "output_frame": 13,
+      "source_frame": 13,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 13
+    },
+    {
+      "output_frame": 14,
+      "source_frame": 14,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 14
+    },
+    {
+      "output_frame": 15,
+      "source_frame": 15,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 15
+    },
+    {
+      "output_frame": 16,
+      "source_frame": 16,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 16
+    },
+    {
+      "output_frame": 17,
+      "source_frame": 17,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 17
+    },
+    {
+      "output_frame": 18,
+      "source_frame": 18,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 18
+    },
+    {
+      "output_frame": 19,
+      "source_frame": 19,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 19
+    },
+    {
+      "output_frame": 20,
+      "source_frame": 20,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 20
+    },
+    {
+      "output_frame": 21,
+      "source_frame": 21,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 21
+    },
+    {
+      "output_frame": 22,
+      "source_frame": 22,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 22
+    },
+    {
+      "output_frame": 23,
+      "source_frame": 23,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 23
+    },
+    {
+      "output_frame": 24,
+      "source_frame": 24,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 24
+    },
+    {
+      "output_frame": 25,
+      "source_frame": 25,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 25
+    },
+    {
+      "output_frame": 26,
+      "source_frame": 26,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 26
+    },
+    {
+      "output_frame": 27,
+      "source_frame": 27,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 27
+    },
+    {
+      "output_frame": 28,
+      "source_frame": 28,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 28
+    },
+    {
+      "output_frame": 29,
+      "source_frame": 29,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 29
+    },
+    {
+      "output_frame": 30,
+      "source_frame": 30,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 30
+    },
+    {
+      "output_frame": 31,
+      "source_frame": 31,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 31
+    },
+    {
+      "output_frame": 32,
+      "source_frame": 32,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 32
+    },
+    {
+      "output_frame": 33,
+      "source_frame": 33,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 33
+    },
+    {
+      "output_frame": 34,
+      "source_frame": 34,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 34
+    },
+    {
+      "output_frame": 35,
+      "source_frame": 35,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 35
+    },
+    {
+      "output_frame": 36,
+      "source_frame": 36,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 36
+    },
+    {
+      "output_frame": 37,
+      "source_frame": 37,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 37
+    },
+    {
+      "output_frame": 38,
+      "source_frame": 38,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 38
+    },
+    {
+      "output_frame": 39,
+      "source_frame": 39,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 39
+    },
+    {
+      "output_frame": 40,
+      "source_frame": 40,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 40
+    },
+    {
+      "output_frame": 41,
+      "source_frame": 41,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 41
+    },
+    {
+      "output_frame": 42,
+      "source_frame": 42,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 42
+    },
+    {
+      "output_frame": 43,
+      "source_frame": 43,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 43
+    },
+    {
+      "output_frame": 44,
+      "source_frame": 44,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 44
+    },
+    {
+      "output_frame": 45,
+      "source_frame": 45,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 45
+    },
+    {
+      "output_frame": 46,
+      "source_frame": 46,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 46
+    },
+    {
+      "output_frame": 47,
+      "source_frame": 47,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 47
+    },
+    {
+      "output_frame": 48,
+      "source_frame": 48,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 48
+    },
+    {
+      "output_frame": 49,
+      "source_frame": 49,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 49
+    },
+    {
+      "output_frame": 50,
+      "source_frame": 50,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 50
+    },
+    {
+      "output_frame": 51,
+      "source_frame": 51,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 51
+    },
+    {
+      "output_frame": 52,
+      "source_frame": 52,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 52
+    },
+    {
+      "output_frame": 53,
+      "source_frame": 53,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 53
+    },
+    {
+      "output_frame": 54,
+      "source_frame": 54,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 54
+    },
+    {
+      "output_frame": 55,
+      "source_frame": 55,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 55
+    },
+    {
+      "output_frame": 56,
+      "source_frame": 56,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 56
+    },
+    {
+      "output_frame": 57,
+      "source_frame": 57,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 57
+    },
+    {
+      "output_frame": 58,
+      "source_frame": 58,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 58
+    },
+    {
+      "output_frame": 59,
+      "source_frame": 59,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 59
+    },
+    {
+      "output_frame": 60,
+      "source_frame": 60,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 60
+    },
+    {
+      "output_frame": 61,
+      "source_frame": 61,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 61
+    },
+    {
+      "output_frame": 62,
+      "source_frame": 62,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 62
+    },
+    {
+      "output_frame": 63,
+      "source_frame": 63,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 63
+    },
+    {
+      "output_frame": 64,
+      "source_frame": 64,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 64
+    },
+    {
+      "output_frame": 65,
+      "source_frame": 65,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 65
+    },
+    {
+      "output_frame": 66,
+      "source_frame": 66,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 66
+    },
+    {
+      "output_frame": 67,
+      "source_frame": 67,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 67
+    },
+    {
+      "output_frame": 68,
+      "source_frame": 68,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 68
+    },
+    {
+      "output_frame": 69,
+      "source_frame": 69,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 69
+    },
+    {
+      "output_frame": 70,
+      "source_frame": 70,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 70
+    },
+    {
+      "output_frame": 71,
+      "source_frame": 71,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 71
+    },
+    {
+      "output_frame": 72,
+      "source_frame": 72,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 72
+    },
+    {
+      "output_frame": 73,
+      "source_frame": 73,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 73
+    },
+    {
+      "output_frame": 74,
+      "source_frame": 74,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 74
+    },
+    {
+      "output_frame": 75,
+      "source_frame": 75,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 75
+    },
+    {
+      "output_frame": 76,
+      "source_frame": 76,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 76
+    },
+    {
+      "output_frame": 77,
+      "source_frame": 77,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 77
+    },
+    {
+      "output_frame": 78,
+      "source_frame": 78,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 78
+    },
+    {
+      "output_frame": 79,
+      "source_frame": 79,
+      "map_snapshot": 0,
+      "trail_start_frame": 0,
+      "trail_end_frame": 79
+    },
+    {
+      "output_frame": 80,
+      "source_frame": 80,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 80
+    },
+    {
+      "output_frame": 81,
+      "source_frame": 84,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 84
+    },
+    {
+      "output_frame": 82,
+      "source_frame": 88,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 88
+    },
+    {
+      "output_frame": 83,
+      "source_frame": 92,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 92
+    },
+    {
+      "output_frame": 84,
+      "source_frame": 96,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 96
+    },
+    {
+      "output_frame": 85,
+      "source_frame": 100,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 100
+    },
+    {
+      "output_frame": 86,
+      "source_frame": 104,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 104
+    },
+    {
+      "output_frame": 87,
+      "source_frame": 108,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 108
+    },
+    {
+      "output_frame": 88,
+      "source_frame": 112,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 112
+    },
+    {
+      "output_frame": 89,
+      "source_frame": 116,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 116
+    },
+    {
+      "output_frame": 90,
+      "source_frame": 120,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 120
+    },
+    {
+      "output_frame": 91,
+      "source_frame": 124,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 124
+    },
+    {
+      "output_frame": 92,
+      "source_frame": 128,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 128
+    },
+    {
+      "output_frame": 93,
+      "source_frame": 132,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 132
+    },
+    {
+      "output_frame": 94,
+      "source_frame": 136,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 136
+    },
+    {
+      "output_frame": 95,
+      "source_frame": 140,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 140
+    },
+    {
+      "output_frame": 96,
+      "source_frame": 144,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 144
+    },
+    {
+      "output_frame": 97,
+      "source_frame": 148,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 148
+    },
+    {
+      "output_frame": 98,
+      "source_frame": 152,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 152
+    },
+    {
+      "output_frame": 99,
+      "source_frame": 156,
+      "map_snapshot": 1,
+      "trail_start_frame": 0,
+      "trail_end_frame": 156
+    },
+    {
+      "output_frame": 100,
+      "source_frame": 160,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 160
+    },
+    {
+      "output_frame": 101,
+      "source_frame": 164,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 164
+    },
+    {
+      "output_frame": 102,
+      "source_frame": 168,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 168
+    },
+    {
+      "output_frame": 103,
+      "source_frame": 172,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 172
+    },
+    {
+      "output_frame": 104,
+      "source_frame": 176,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 176
+    },
+    {
+      "output_frame": 105,
+      "source_frame": 180,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 180
+    },
+    {
+      "output_frame": 106,
+      "source_frame": 184,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 184
+    },
+    {
+      "output_frame": 107,
+      "source_frame": 188,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 188
+    },
+    {
+      "output_frame": 108,
+      "source_frame": 192,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 192
+    },
+    {
+      "output_frame": 109,
+      "source_frame": 196,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 196
+    },
+    {
+      "output_frame": 110,
+      "source_frame": 200,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 200
+    },
+    {
+      "output_frame": 111,
+      "source_frame": 204,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 204
+    },
+    {
+      "output_frame": 112,
+      "source_frame": 208,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 208
+    },
+    {
+      "output_frame": 113,
+      "source_frame": 212,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 212
+    },
+    {
+      "output_frame": 114,
+      "source_frame": 216,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 216
+    },
+    {
+      "output_frame": 115,
+      "source_frame": 220,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 220
+    },
+    {
+      "output_frame": 116,
+      "source_frame": 224,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 224
+    },
+    {
+      "output_frame": 117,
+      "source_frame": 228,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 228
+    },
+    {
+      "output_frame": 118,
+      "source_frame": 232,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 232
+    },
+    {
+      "output_frame": 119,
+      "source_frame": 236,
+      "map_snapshot": 2,
+      "trail_start_frame": 0,
+      "trail_end_frame": 236
+    },
+    {
+      "output_frame": 120,
+      "source_frame": 240,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 240
+    },
+    {
+      "output_frame": 121,
+      "source_frame": 244,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 244
+    },
+    {
+      "output_frame": 122,
+      "source_frame": 248,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 248
+    },
+    {
+      "output_frame": 123,
+      "source_frame": 252,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 252
+    },
+    {
+      "output_frame": 124,
+      "source_frame": 256,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 256
+    },
+    {
+      "output_frame": 125,
+      "source_frame": 260,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 260
+    },
+    {
+      "output_frame": 126,
+      "source_frame": 264,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 264
+    },
+    {
+      "output_frame": 127,
+      "source_frame": 268,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 268
+    },
+    {
+      "output_frame": 128,
+      "source_frame": 272,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 272
+    },
+    {
+      "output_frame": 129,
+      "source_frame": 276,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 276
+    },
+    {
+      "output_frame": 130,
+      "source_frame": 280,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 280
+    },
+    {
+      "output_frame": 131,
+      "source_frame": 284,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 284
+    },
+    {
+      "output_frame": 132,
+      "source_frame": 288,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 288
+    },
+    {
+      "output_frame": 133,
+      "source_frame": 292,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 292
+    },
+    {
+      "output_frame": 134,
+      "source_frame": 296,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 296
+    },
+    {
+      "output_frame": 135,
+      "source_frame": 300,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 300
+    },
+    {
+      "output_frame": 136,
+      "source_frame": 304,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 304
+    },
+    {
+      "output_frame": 137,
+      "source_frame": 308,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 308
+    },
+    {
+      "output_frame": 138,
+      "source_frame": 312,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 312
+    },
+    {
+      "output_frame": 139,
+      "source_frame": 316,
+      "map_snapshot": 3,
+      "trail_start_frame": 0,
+      "trail_end_frame": 316
+    },
+    {
+      "output_frame": 140,
+      "source_frame": 320,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 320
+    },
+    {
+      "output_frame": 141,
+      "source_frame": 324,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 324
+    },
+    {
+      "output_frame": 142,
+      "source_frame": 328,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 328
+    },
+    {
+      "output_frame": 143,
+      "source_frame": 332,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 332
+    },
+    {
+      "output_frame": 144,
+      "source_frame": 336,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 336
+    },
+    {
+      "output_frame": 145,
+      "source_frame": 340,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 340
+    },
+    {
+      "output_frame": 146,
+      "source_frame": 344,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 344
+    },
+    {
+      "output_frame": 147,
+      "source_frame": 348,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 348
+    },
+    {
+      "output_frame": 148,
+      "source_frame": 352,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 352
+    },
+    {
+      "output_frame": 149,
+      "source_frame": 356,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 356
+    },
+    {
+      "output_frame": 150,
+      "source_frame": 360,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 360
+    },
+    {
+      "output_frame": 151,
+      "source_frame": 364,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 364
+    },
+    {
+      "output_frame": 152,
+      "source_frame": 368,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 368
+    },
+    {
+      "output_frame": 153,
+      "source_frame": 372,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 372
+    },
+    {
+      "output_frame": 154,
+      "source_frame": 376,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 376
+    },
+    {
+      "output_frame": 155,
+      "source_frame": 380,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 380
+    },
+    {
+      "output_frame": 156,
+      "source_frame": 384,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 384
+    },
+    {
+      "output_frame": 157,
+      "source_frame": 388,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 388
+    },
+    {
+      "output_frame": 158,
+      "source_frame": 392,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 392
+    },
+    {
+      "output_frame": 159,
+      "source_frame": 396,
+      "map_snapshot": 4,
+      "trail_start_frame": 0,
+      "trail_end_frame": 396
+    },
+    {
+      "output_frame": 160,
+      "source_frame": 400,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 400
+    },
+    {
+      "output_frame": 161,
+      "source_frame": 404,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 404
+    },
+    {
+      "output_frame": 162,
+      "source_frame": 408,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 408
+    },
+    {
+      "output_frame": 163,
+      "source_frame": 412,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 412
+    },
+    {
+      "output_frame": 164,
+      "source_frame": 416,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 416
+    },
+    {
+      "output_frame": 165,
+      "source_frame": 420,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 420
+    },
+    {
+      "output_frame": 166,
+      "source_frame": 424,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 424
+    },
+    {
+      "output_frame": 167,
+      "source_frame": 428,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 428
+    },
+    {
+      "output_frame": 168,
+      "source_frame": 432,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 432
+    },
+    {
+      "output_frame": 169,
+      "source_frame": 436,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 436
+    },
+    {
+      "output_frame": 170,
+      "source_frame": 440,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 440
+    },
+    {
+      "output_frame": 171,
+      "source_frame": 444,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 444
+    },
+    {
+      "output_frame": 172,
+      "source_frame": 448,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 448
+    },
+    {
+      "output_frame": 173,
+      "source_frame": 452,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 452
+    },
+    {
+      "output_frame": 174,
+      "source_frame": 456,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 456
+    },
+    {
+      "output_frame": 175,
+      "source_frame": 460,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 460
+    },
+    {
+      "output_frame": 176,
+      "source_frame": 464,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 464
+    },
+    {
+      "output_frame": 177,
+      "source_frame": 468,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 468
+    },
+    {
+      "output_frame": 178,
+      "source_frame": 472,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 472
+    },
+    {
+      "output_frame": 179,
+      "source_frame": 476,
+      "map_snapshot": 5,
+      "trail_start_frame": 0,
+      "trail_end_frame": 476
+    },
+    {
+      "output_frame": 180,
+      "source_frame": 480,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 480
+    },
+    {
+      "output_frame": 181,
+      "source_frame": 484,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 484
+    },
+    {
+      "output_frame": 182,
+      "source_frame": 488,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 488
+    },
+    {
+      "output_frame": 183,
+      "source_frame": 492,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 492
+    },
+    {
+      "output_frame": 184,
+      "source_frame": 496,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 496
+    },
+    {
+      "output_frame": 185,
+      "source_frame": 500,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 500
+    },
+    {
+      "output_frame": 186,
+      "source_frame": 504,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 504
+    },
+    {
+      "output_frame": 187,
+      "source_frame": 508,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 508
+    },
+    {
+      "output_frame": 188,
+      "source_frame": 512,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 512
+    },
+    {
+      "output_frame": 189,
+      "source_frame": 516,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 516
+    },
+    {
+      "output_frame": 190,
+      "source_frame": 520,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 520
+    },
+    {
+      "output_frame": 191,
+      "source_frame": 524,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 524
+    },
+    {
+      "output_frame": 192,
+      "source_frame": 528,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 528
+    },
+    {
+      "output_frame": 193,
+      "source_frame": 532,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 532
+    },
+    {
+      "output_frame": 194,
+      "source_frame": 536,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 536
+    },
+    {
+      "output_frame": 195,
+      "source_frame": 540,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 540
+    },
+    {
+      "output_frame": 196,
+      "source_frame": 544,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 544
+    },
+    {
+      "output_frame": 197,
+      "source_frame": 548,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 548
+    },
+    {
+      "output_frame": 198,
+      "source_frame": 552,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 552
+    },
+    {
+      "output_frame": 199,
+      "source_frame": 556,
+      "map_snapshot": 6,
+      "trail_start_frame": 0,
+      "trail_end_frame": 556
+    },
+    {
+      "output_frame": 200,
+      "source_frame": 560,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 560
+    },
+    {
+      "output_frame": 201,
+      "source_frame": 564,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 564
+    },
+    {
+      "output_frame": 202,
+      "source_frame": 568,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 568
+    },
+    {
+      "output_frame": 203,
+      "source_frame": 572,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 572
+    },
+    {
+      "output_frame": 204,
+      "source_frame": 576,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 576
+    },
+    {
+      "output_frame": 205,
+      "source_frame": 580,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 580
+    },
+    {
+      "output_frame": 206,
+      "source_frame": 584,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 584
+    },
+    {
+      "output_frame": 207,
+      "source_frame": 588,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 588
+    },
+    {
+      "output_frame": 208,
+      "source_frame": 592,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 592
+    },
+    {
+      "output_frame": 209,
+      "source_frame": 596,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 596
+    },
+    {
+      "output_frame": 210,
+      "source_frame": 600,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 600
+    },
+    {
+      "output_frame": 211,
+      "source_frame": 604,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 604
+    },
+    {
+      "output_frame": 212,
+      "source_frame": 608,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 608
+    },
+    {
+      "output_frame": 213,
+      "source_frame": 612,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 612
+    },
+    {
+      "output_frame": 214,
+      "source_frame": 616,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 616
+    },
+    {
+      "output_frame": 215,
+      "source_frame": 620,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 620
+    },
+    {
+      "output_frame": 216,
+      "source_frame": 624,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 624
+    },
+    {
+      "output_frame": 217,
+      "source_frame": 628,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 628
+    },
+    {
+      "output_frame": 218,
+      "source_frame": 632,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 632
+    },
+    {
+      "output_frame": 219,
+      "source_frame": 636,
+      "map_snapshot": 7,
+      "trail_start_frame": 0,
+      "trail_end_frame": 636
+    },
+    {
+      "output_frame": 220,
+      "source_frame": 640,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 640
+    },
+    {
+      "output_frame": 221,
+      "source_frame": 644,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 644
+    },
+    {
+      "output_frame": 222,
+      "source_frame": 648,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 648
+    },
+    {
+      "output_frame": 223,
+      "source_frame": 652,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 652
+    },
+    {
+      "output_frame": 224,
+      "source_frame": 656,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 656
+    },
+    {
+      "output_frame": 225,
+      "source_frame": 660,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 660
+    },
+    {
+      "output_frame": 226,
+      "source_frame": 664,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 664
+    },
+    {
+      "output_frame": 227,
+      "source_frame": 668,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 668
+    },
+    {
+      "output_frame": 228,
+      "source_frame": 672,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 672
+    },
+    {
+      "output_frame": 229,
+      "source_frame": 676,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 676
+    },
+    {
+      "output_frame": 230,
+      "source_frame": 680,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 680
+    },
+    {
+      "output_frame": 231,
+      "source_frame": 684,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 684
+    },
+    {
+      "output_frame": 232,
+      "source_frame": 688,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 688
+    },
+    {
+      "output_frame": 233,
+      "source_frame": 692,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 692
+    },
+    {
+      "output_frame": 234,
+      "source_frame": 696,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 696
+    },
+    {
+      "output_frame": 235,
+      "source_frame": 700,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 700
+    },
+    {
+      "output_frame": 236,
+      "source_frame": 704,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 704
+    },
+    {
+      "output_frame": 237,
+      "source_frame": 708,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 708
+    },
+    {
+      "output_frame": 238,
+      "source_frame": 712,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 712
+    },
+    {
+      "output_frame": 239,
+      "source_frame": 716,
+      "map_snapshot": 8,
+      "trail_start_frame": 0,
+      "trail_end_frame": 716
+    },
+    {
+      "output_frame": 240,
+      "source_frame": 720,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 720
+    },
+    {
+      "output_frame": 241,
+      "source_frame": 724,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 724
+    },
+    {
+      "output_frame": 242,
+      "source_frame": 728,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 728
+    },
+    {
+      "output_frame": 243,
+      "source_frame": 732,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 732
+    },
+    {
+      "output_frame": 244,
+      "source_frame": 736,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 736
+    },
+    {
+      "output_frame": 245,
+      "source_frame": 740,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 740
+    },
+    {
+      "output_frame": 246,
+      "source_frame": 744,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 744
+    },
+    {
+      "output_frame": 247,
+      "source_frame": 748,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 748
+    },
+    {
+      "output_frame": 248,
+      "source_frame": 752,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 752
+    },
+    {
+      "output_frame": 249,
+      "source_frame": 756,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 756
+    },
+    {
+      "output_frame": 250,
+      "source_frame": 760,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 760
+    },
+    {
+      "output_frame": 251,
+      "source_frame": 764,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 764
+    },
+    {
+      "output_frame": 252,
+      "source_frame": 768,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 768
+    },
+    {
+      "output_frame": 253,
+      "source_frame": 772,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 772
+    },
+    {
+      "output_frame": 254,
+      "source_frame": 776,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 776
+    },
+    {
+      "output_frame": 255,
+      "source_frame": 780,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 780
+    },
+    {
+      "output_frame": 256,
+      "source_frame": 784,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 784
+    },
+    {
+      "output_frame": 257,
+      "source_frame": 788,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 788
+    },
+    {
+      "output_frame": 258,
+      "source_frame": 792,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 792
+    },
+    {
+      "output_frame": 259,
+      "source_frame": 796,
+      "map_snapshot": 9,
+      "trail_start_frame": 0,
+      "trail_end_frame": 796
+    },
+    {
+      "output_frame": 260,
+      "source_frame": 800,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 800
+    },
+    {
+      "output_frame": 261,
+      "source_frame": 804,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 804
+    },
+    {
+      "output_frame": 262,
+      "source_frame": 808,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 808
+    },
+    {
+      "output_frame": 263,
+      "source_frame": 812,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 812
+    },
+    {
+      "output_frame": 264,
+      "source_frame": 816,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 816
+    },
+    {
+      "output_frame": 265,
+      "source_frame": 820,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 820
+    },
+    {
+      "output_frame": 266,
+      "source_frame": 824,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 824
+    },
+    {
+      "output_frame": 267,
+      "source_frame": 828,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 828
+    },
+    {
+      "output_frame": 268,
+      "source_frame": 832,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 832
+    },
+    {
+      "output_frame": 269,
+      "source_frame": 836,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 836
+    },
+    {
+      "output_frame": 270,
+      "source_frame": 840,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 840
+    },
+    {
+      "output_frame": 271,
+      "source_frame": 844,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 844
+    },
+    {
+      "output_frame": 272,
+      "source_frame": 848,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 848
+    },
+    {
+      "output_frame": 273,
+      "source_frame": 852,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 852
+    },
+    {
+      "output_frame": 274,
+      "source_frame": 856,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 856
+    },
+    {
+      "output_frame": 275,
+      "source_frame": 860,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 860
+    },
+    {
+      "output_frame": 276,
+      "source_frame": 864,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 864
+    },
+    {
+      "output_frame": 277,
+      "source_frame": 868,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 868
+    },
+    {
+      "output_frame": 278,
+      "source_frame": 872,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 872
+    },
+    {
+      "output_frame": 279,
+      "source_frame": 876,
+      "map_snapshot": 10,
+      "trail_start_frame": 0,
+      "trail_end_frame": 876
+    },
+    {
+      "output_frame": 280,
+      "source_frame": 880,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 880
+    },
+    {
+      "output_frame": 281,
+      "source_frame": 881,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 881
+    },
+    {
+      "output_frame": 282,
+      "source_frame": 882,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 882
+    },
+    {
+      "output_frame": 283,
+      "source_frame": 883,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 883
+    },
+    {
+      "output_frame": 284,
+      "source_frame": 884,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 884
+    },
+    {
+      "output_frame": 285,
+      "source_frame": 885,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 885
+    },
+    {
+      "output_frame": 286,
+      "source_frame": 886,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 886
+    },
+    {
+      "output_frame": 287,
+      "source_frame": 887,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 887
+    },
+    {
+      "output_frame": 288,
+      "source_frame": 888,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 888
+    },
+    {
+      "output_frame": 289,
+      "source_frame": 889,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 889
+    },
+    {
+      "output_frame": 290,
+      "source_frame": 890,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 890
+    },
+    {
+      "output_frame": 291,
+      "source_frame": 891,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 891
+    },
+    {
+      "output_frame": 292,
+      "source_frame": 892,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 892
+    },
+    {
+      "output_frame": 293,
+      "source_frame": 893,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 893
+    },
+    {
+      "output_frame": 294,
+      "source_frame": 894,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 894
+    },
+    {
+      "output_frame": 295,
+      "source_frame": 895,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 895
+    },
+    {
+      "output_frame": 296,
+      "source_frame": 896,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 896
+    },
+    {
+      "output_frame": 297,
+      "source_frame": 897,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 897
+    },
+    {
+      "output_frame": 298,
+      "source_frame": 898,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 898
+    },
+    {
+      "output_frame": 299,
+      "source_frame": 899,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 899
+    },
+    {
+      "output_frame": 300,
+      "source_frame": 900,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 900
+    },
+    {
+      "output_frame": 301,
+      "source_frame": 901,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 901
+    },
+    {
+      "output_frame": 302,
+      "source_frame": 902,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 902
+    },
+    {
+      "output_frame": 303,
+      "source_frame": 903,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 903
+    },
+    {
+      "output_frame": 304,
+      "source_frame": 904,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 904
+    },
+    {
+      "output_frame": 305,
+      "source_frame": 905,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 905
+    },
+    {
+      "output_frame": 306,
+      "source_frame": 906,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 906
+    },
+    {
+      "output_frame": 307,
+      "source_frame": 907,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 907
+    },
+    {
+      "output_frame": 308,
+      "source_frame": 908,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 908
+    },
+    {
+      "output_frame": 309,
+      "source_frame": 909,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 909
+    },
+    {
+      "output_frame": 310,
+      "source_frame": 910,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 910
+    },
+    {
+      "output_frame": 311,
+      "source_frame": 911,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 911
+    },
+    {
+      "output_frame": 312,
+      "source_frame": 912,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 912
+    },
+    {
+      "output_frame": 313,
+      "source_frame": 913,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 913
+    },
+    {
+      "output_frame": 314,
+      "source_frame": 914,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 914
+    },
+    {
+      "output_frame": 315,
+      "source_frame": 915,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 915
+    },
+    {
+      "output_frame": 316,
+      "source_frame": 916,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 916
+    },
+    {
+      "output_frame": 317,
+      "source_frame": 917,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 917
+    },
+    {
+      "output_frame": 318,
+      "source_frame": 918,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 918
+    },
+    {
+      "output_frame": 319,
+      "source_frame": 919,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 919
+    },
+    {
+      "output_frame": 320,
+      "source_frame": 920,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 920
+    },
+    {
+      "output_frame": 321,
+      "source_frame": 921,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 921
+    },
+    {
+      "output_frame": 322,
+      "source_frame": 922,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 922
+    },
+    {
+      "output_frame": 323,
+      "source_frame": 923,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 923
+    },
+    {
+      "output_frame": 324,
+      "source_frame": 924,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 924
+    },
+    {
+      "output_frame": 325,
+      "source_frame": 925,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 925
+    },
+    {
+      "output_frame": 326,
+      "source_frame": 926,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 926
+    },
+    {
+      "output_frame": 327,
+      "source_frame": 927,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 927
+    },
+    {
+      "output_frame": 328,
+      "source_frame": 928,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 928
+    },
+    {
+      "output_frame": 329,
+      "source_frame": 929,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 929
+    },
+    {
+      "output_frame": 330,
+      "source_frame": 930,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 930
+    },
+    {
+      "output_frame": 331,
+      "source_frame": 931,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 931
+    },
+    {
+      "output_frame": 332,
+      "source_frame": 932,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 932
+    },
+    {
+      "output_frame": 333,
+      "source_frame": 933,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 933
+    },
+    {
+      "output_frame": 334,
+      "source_frame": 934,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 934
+    },
+    {
+      "output_frame": 335,
+      "source_frame": 935,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 935
+    },
+    {
+      "output_frame": 336,
+      "source_frame": 936,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 936
+    },
+    {
+      "output_frame": 337,
+      "source_frame": 937,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 937
+    },
+    {
+      "output_frame": 338,
+      "source_frame": 938,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 938
+    },
+    {
+      "output_frame": 339,
+      "source_frame": 939,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 939
+    },
+    {
+      "output_frame": 340,
+      "source_frame": 940,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 940
+    },
+    {
+      "output_frame": 341,
+      "source_frame": 941,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 941
+    },
+    {
+      "output_frame": 342,
+      "source_frame": 942,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 942
+    },
+    {
+      "output_frame": 343,
+      "source_frame": 943,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 943
+    },
+    {
+      "output_frame": 344,
+      "source_frame": 944,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 944
+    },
+    {
+      "output_frame": 345,
+      "source_frame": 945,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 945
+    },
+    {
+      "output_frame": 346,
+      "source_frame": 946,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 946
+    },
+    {
+      "output_frame": 347,
+      "source_frame": 947,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 947
+    },
+    {
+      "output_frame": 348,
+      "source_frame": 948,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 948
+    },
+    {
+      "output_frame": 349,
+      "source_frame": 949,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 949
+    },
+    {
+      "output_frame": 350,
+      "source_frame": 950,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 950
+    },
+    {
+      "output_frame": 351,
+      "source_frame": 951,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 951
+    },
+    {
+      "output_frame": 352,
+      "source_frame": 952,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 952
+    },
+    {
+      "output_frame": 353,
+      "source_frame": 953,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 953
+    },
+    {
+      "output_frame": 354,
+      "source_frame": 954,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 954
+    },
+    {
+      "output_frame": 355,
+      "source_frame": 955,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 955
+    },
+    {
+      "output_frame": 356,
+      "source_frame": 956,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 956
+    },
+    {
+      "output_frame": 357,
+      "source_frame": 957,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 957
+    },
+    {
+      "output_frame": 358,
+      "source_frame": 958,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 958
+    },
+    {
+      "output_frame": 359,
+      "source_frame": 959,
+      "map_snapshot": 11,
+      "trail_start_frame": 0,
+      "trail_end_frame": 959
+    },
+    {
+      "output_frame": 360,
+      "source_frame": 960,
+      "map_snapshot": 12,
+      "trail_start_frame": 0,
+      "trail_end_frame": 960
+    }
+  ],
+  "video_sha256": "d416d0e7d30d61dda5f679f6233eed1429a0277495c48626497b6587b959c14b"
+}

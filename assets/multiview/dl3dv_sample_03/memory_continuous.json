@@ -1,0 +1,61 @@
+{
+  "c2w": [
+    [
+      0.8516583167045438,
+      0.19172870409669995,
+      -0.48776860867975397,
+      4.04851209678858
+    ],
+    [
+      0.0,
+      0.9306830844693977,
+      0.36582645650981543,
+      -3.406270782341134
+    ],
+    [
+      0.5240974256643347,
+      -0.3115591441571374,
+      0.7926239891046001,
+      -5.008650396344467
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "K": [
+    [
+      760.0,
+      0.0,
+      416.0
+    ],
+    [
+      0.0,
+      760.0,
+      240.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "snapshots": [
+    "memory_before.npz",
+    "memory_after.npz",
+    "memory_after.npz"
+  ],
+  "available_after_frames": [
+    0,
+    80,
+    160
+  ],
+  "trail_policy": "Every camera from global frame zero through the current frame; never resets at chunk boundaries",
+  "fixed_overview": true,
+  "resolution": [
+    832,
+    480
+  ]
+}

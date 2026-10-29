@@ -1,0 +1,236 @@
+[
+  {
+    "id": "custom_washington",
+    "scene_id": "custom_washington",
+    "title": "Washington",
+    "category": "long",
+    "source": "Custom",
+    "experiment": "v2_retrieval_61320_r4",
+    "prompt": "A grand, neoclassical stone courthouse dominates the scene, its light beige facade punctuated by tall columns and ornate pediments beneath a green-tiled roof, crowned by a small flag. In the foreground, a bronze statue of George Washington stands atop a dark granite pedestal inscribed with his title and dates, positioned centrally on a manicured lawn. Lush green grass stretches outward, bisected by wide, light-gray concrete walkways that lead toward the building\u2019s entrance. Mature trees with dense foliage frame the scene on both sides, casting dappled shadows across the lawn under a bright blue sky with scattered white clouds. The lighting is strong and direct, highlighting the textures of the stone, bronze, and grass. The overall atmosphere is formal, historic, and serene, rendered in a crisp, realistic photographic style.",
+    "frames": 361,
+    "original_frames": 961,
+    "chunks": 12,
+    "native_fps": 24,
+    "playback_rate": 1,
+    "color_method": "tracked_tone",
+    "preview_speed_segments": [
+      {
+        "start": 3.3333333333333335,
+        "end": 11.666666666666666,
+        "multiplier": 4
+      }
+    ],
+    "generation_duration_fps": 16,
+    "generation_duration_seconds": 60,
+    "input_count": 1,
+    "inputs": [
+      "assets/long_horizon/custom_washington/input.webp"
+    ],
+    "poster": "assets/long_horizon/custom_washington/input.webp",
+    "generated": "assets/long_horizon/custom_washington/generated.mp4",
+    "memory": "assets/long_horizon/custom_washington/memory.mp4",
+    "memory_poster": "assets/long_horizon/custom_washington/memory_poster.webp",
+    "memory_montage": false,
+    "condition": null,
+    "variants": [
+      {
+        "id": "custom_washington",
+        "scene_id": "custom_washington",
+        "title": "Washington",
+        "category": "long",
+        "source": "Custom",
+        "experiment": "v2_retrieval_61320_r4",
+        "prompt": "A grand, neoclassical stone courthouse dominates the scene, its light beige facade punctuated by tall columns and ornate pediments beneath a green-tiled roof, crowned by a small flag. In the foreground, a bronze statue of George Washington stands atop a dark granite pedestal inscribed with his title and dates, positioned centrally on a manicured lawn. Lush green grass stretches outward, bisected by wide, light-gray concrete walkways that lead toward the building\u2019s entrance. Mature trees with dense foliage frame the scene on both sides, casting dappled shadows across the lawn under a bright blue sky with scattered white clouds. The lighting is strong and direct, highlighting the textures of the stone, bronze, and grass. The overall atmosphere is formal, historic, and serene, rendered in a crisp, realistic photographic style.",
+        "frames": 361,
+        "original_frames": 961,
+        "chunks": 12,
+        "native_fps": 24,
+        "playback_rate": 1,
+        "color_method": "tracked_tone",
+        "preview_speed_segments": [
+          {
+            "start": 3.3333333333333335,
+            "end": 11.666666666666666,
+            "multiplier": 4
+          }
+        ],
+        "generation_duration_fps": 16,
+        "generation_duration_seconds": 60,
+        "input_count": 1,
+        "inputs": [
+          "assets/long_horizon/custom_washington/input.webp"
+        ],
+        "poster": "assets/long_horizon/custom_washington/input.webp",
+        "generated": "assets/long_horizon/custom_washington/generated.mp4",
+        "memory": "assets/long_horizon/custom_washington/memory.mp4",
+        "memory_poster": "assets/long_horizon/custom_washington/memory_poster.webp",
+        "memory_montage": false,
+        "condition": null,
+        "growth_primitives": "assets/long_horizon/custom_washington/growth_primitives_k.mp4",
+        "growth_memory": "assets/long_horizon/custom_washington/growth_memory_mib.mp4",
+        "growth_primitives_poster": "assets/long_horizon/custom_washington/growth_primitives_k.webp",
+        "growth_memory_poster": "assets/long_horizon/custom_washington/growth_memory_mib.webp"
+      }
+    ],
+    "growth_primitives": "assets/long_horizon/custom_washington/growth_primitives_k.mp4",
+    "growth_memory": "assets/long_horizon/custom_washington/growth_memory_mib.mp4",
+    "growth_primitives_poster": "assets/long_horizon/custom_washington/growth_primitives_k.webp",
+    "growth_memory_poster": "assets/long_horizon/custom_washington/growth_memory_mib.webp"
+  },
+  {
+    "id": "custom_chamonix",
+    "scene_id": "custom_chamonix",
+    "title": "Chamonix",
+    "category": "long",
+    "source": "Custom",
+    "experiment": "v2_retrieval_61320_r4",
+    "prompt": "A sun-drenched alpine village unfolds beneath a vast, cloudless blue sky, framed by towering, snow-capped mountain peaks that dominate the horizon. In the foreground, a vibrant flowerbed brimming with pink, yellow, and purple blossoms spills over a green metal railing, creating a burst of color against the stone and wood of the surrounding architecture. A multi-story peach-colored building with white-trimmed windows and wrought-iron balconies stands prominently, its dark roof contrasting with the bright facade. To its right, a terracotta-hued structure with wooden shutters adds warmth to the scene. Lush green trees and shrubs soften the transition between buildings and the mountain slopes. The lighting is bright and direct, casting crisp shadows and highlighting the textures of stone, wood, and petals, evoking a serene, picturesque European mountain resort atmosphere.",
+    "frames": 361,
+    "original_frames": 961,
+    "chunks": 12,
+    "native_fps": 24,
+    "playback_rate": 1,
+    "color_method": "mean_tone",
+    "preview_speed_segments": [
+      {
+        "start": 3.3333333333333335,
+        "end": 11.666666666666666,
+        "multiplier": 4
+      }
+    ],
+    "generation_duration_fps": 16,
+    "generation_duration_seconds": 60,
+    "input_count": 1,
+    "inputs": [
+      "assets/long_horizon/custom_chamonix/input.webp"
+    ],
+    "poster": "assets/long_horizon/custom_chamonix/input.webp",
+    "generated": "assets/long_horizon/custom_chamonix/generated.mp4",
+    "memory": "assets/long_horizon/custom_chamonix/memory.mp4",
+    "memory_poster": "assets/long_horizon/custom_chamonix/memory_poster.webp",
+    "memory_montage": false,
+    "condition": null,
+    "variants": [
+      {
+        "id": "custom_chamonix",
+        "scene_id": "custom_chamonix",
+        "title": "Chamonix",
+        "category": "long",
+        "source": "Custom",
+        "experiment": "v2_retrieval_61320_r4",
+        "prompt": "A sun-drenched alpine village unfolds beneath a vast, cloudless blue sky, framed by towering, snow-capped mountain peaks that dominate the horizon. In the foreground, a vibrant flowerbed brimming with pink, yellow, and purple blossoms spills over a green metal railing, creating a burst of color against the stone and wood of the surrounding architecture. A multi-story peach-colored building with white-trimmed windows and wrought-iron balconies stands prominently, its dark roof contrasting with the bright facade. To its right, a terracotta-hued structure with wooden shutters adds warmth to the scene. Lush green trees and shrubs soften the transition between buildings and the mountain slopes. The lighting is bright and direct, casting crisp shadows and highlighting the textures of stone, wood, and petals, evoking a serene, picturesque European mountain resort atmosphere.",
+        "frames": 361,
+        "original_frames": 961,
+        "chunks": 12,
+        "native_fps": 24,
+        "playback_rate": 1,
+        "color_method": "mean_tone",
+        "preview_speed_segments": [
+          {
+            "start": 3.3333333333333335,
+            "end": 11.666666666666666,
+            "multiplier": 4
+          }
+        ],
+        "generation_duration_fps": 16,
+        "generation_duration_seconds": 60,
+        "input_count": 1,
+        "inputs": [
+          "assets/long_horizon/custom_chamonix/input.webp"
+        ],
+        "poster": "assets/long_horizon/custom_chamonix/input.webp",
+        "generated": "assets/long_horizon/custom_chamonix/generated.mp4",
+        "memory": "assets/long_horizon/custom_chamonix/memory.mp4",
+        "memory_poster": "assets/long_horizon/custom_chamonix/memory_poster.webp",
+        "memory_montage": false,
+        "condition": null,
+        "growth_primitives": "assets/long_horizon/custom_chamonix/growth_primitives_k.mp4",
+        "growth_memory": "assets/long_horizon/custom_chamonix/growth_memory_mib.mp4",
+        "growth_primitives_poster": "assets/long_horizon/custom_chamonix/growth_primitives_k.webp",
+        "growth_memory_poster": "assets/long_horizon/custom_chamonix/growth_memory_mib.webp"
+      }
+    ],
+    "growth_primitives": "assets/long_horizon/custom_chamonix/growth_primitives_k.mp4",
+    "growth_memory": "assets/long_horizon/custom_chamonix/growth_memory_mib.mp4",
+    "growth_primitives_poster": "assets/long_horizon/custom_chamonix/growth_primitives_k.webp",
+    "growth_memory_poster": "assets/long_horizon/custom_chamonix/growth_memory_mib.webp"
+  },
+  {
+    "id": "custom_gwanghwamun2",
+    "scene_id": "custom_gwanghwamun2",
+    "title": "Gwanghwamun",
+    "category": "long",
+    "source": "Custom",
+    "experiment": "v2_retrieval_61320_r4",
+    "prompt": "A grand, traditional Korean palace gate stands majestically under a vast, bright blue sky streaked with wispy white clouds. The structure features a multi-tiered roof with sweeping, dark gray tiles and ornate green and gold decorative elements beneath the eaves. Three large, vibrant red arched doors are set into a thick, beige stone wall that extends symmetrically on either side. A wide, shallow stone staircase with carved lion-like guardians at its base leads up to the gate\u2019s entrance. Flanking the plaza are low stone balustrades adorned with evenly spaced, white stone statues. The ground is a smooth, light beige stone surface. The scene is bathed in bright, natural daylight, casting soft shadows and highlighting the rich textures and colors of the architecture. The overall style is serene, monumental, and deeply rooted in East Asian imperial tradition.",
+    "frames": 361,
+    "original_frames": 961,
+    "chunks": 12,
+    "native_fps": 24,
+    "playback_rate": 1,
+    "color_method": "mean_tone",
+    "preview_speed_segments": [
+      {
+        "start": 3.3333333333333335,
+        "end": 11.666666666666666,
+        "multiplier": 4
+      }
+    ],
+    "generation_duration_fps": 16,
+    "generation_duration_seconds": 60,
+    "input_count": 1,
+    "inputs": [
+      "assets/long_horizon/custom_gwanghwamun2/input.webp"
+    ],
+    "poster": "assets/long_horizon/custom_gwanghwamun2/input.webp",
+    "generated": "assets/long_horizon/custom_gwanghwamun2/generated.mp4",
+    "memory": "assets/long_horizon/custom_gwanghwamun2/memory.mp4",
+    "memory_poster": "assets/long_horizon/custom_gwanghwamun2/memory_poster.webp",
+    "memory_montage": false,
+    "condition": null,
+    "variants": [
+      {
+        "id": "custom_gwanghwamun2",
+        "scene_id": "custom_gwanghwamun2",
+        "title": "Gwanghwamun",
+        "category": "long",
+        "source": "Custom",
+        "experiment": "v2_retrieval_61320_r4",
+        "prompt": "A grand, traditional Korean palace gate stands majestically under a vast, bright blue sky streaked with wispy white clouds. The structure features a multi-tiered roof with sweeping, dark gray tiles and ornate green and gold decorative elements beneath the eaves. Three large, vibrant red arched doors are set into a thick, beige stone wall that extends symmetrically on either side. A wide, shallow stone staircase with carved lion-like guardians at its base leads up to the gate\u2019s entrance. Flanking the plaza are low stone balustrades adorned with evenly spaced, white stone statues. The ground is a smooth, light beige stone surface. The scene is bathed in bright, natural daylight, casting soft shadows and highlighting the rich textures and colors of the architecture. The overall style is serene, monumental, and deeply rooted in East Asian imperial tradition.",
+        "frames": 361,
+        "original_frames": 961,
+        "chunks": 12,
+        "native_fps": 24,
+        "playback_rate": 1,
+        "color_method": "mean_tone",
+        "preview_speed_segments": [
+          {
+            "start": 3.3333333333333335,
+            "end": 11.666666666666666,
+            "multiplier": 4
+          }
+        ],
+        "generation_duration_fps": 16,
+        "generation_duration_seconds": 60,
+        "input_count": 1,
+        "inputs": [
+          "assets/long_horizon/custom_gwanghwamun2/input.webp"
+        ],
+        "poster": "assets/long_horizon/custom_gwanghwamun2/input.webp",
+        "generated": "assets/long_horizon/custom_gwanghwamun2/generated.mp4",
+        "memory": "assets/long_horizon/custom_gwanghwamun2/memory.mp4",
+        "memory_poster": "assets/long_horizon/custom_gwanghwamun2/memory_poster.webp",
+        "memory_montage": false,
+        "condition": null,
+        "growth_primitives": "assets/long_horizon/custom_gwanghwamun2/growth_primitives_k.mp4",
+        "growth_memory": "assets/long_horizon/custom_gwanghwamun2/growth_memory_mib.mp4",
+        "growth_primitives_poster": "assets/long_horizon/custom_gwanghwamun2/growth_primitives_k.webp",
+        "growth_memory_poster": "assets/long_horizon/custom_gwanghwamun2/growth_memory_mib.webp"
+      }
+    ],
+    "growth_primitives": "assets/long_horizon/custom_gwanghwamun2/growth_primitives_k.mp4",
+    "growth_memory": "assets/long_horizon/custom_gwanghwamun2/growth_memory_mib.mp4",
+    "growth_primitives_poster": "assets/long_horizon/custom_gwanghwamun2/growth_primitives_k.webp",
+    "growth_memory_poster": "assets/long_horizon/custom_gwanghwamun2/growth_memory_mib.webp"
+  }
+]

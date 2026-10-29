@@ -1,0 +1,24 @@
+{
+  "id": "220635b87ef7",
+  "scene_id": "atlas__living_room_impasto_v2",
+  "source_scene": "atlas__living_room_impasto_v2",
+  "memory": "assets/scenes/220635b87ef7/memory_enhanced.mp4",
+  "memory_poster": "assets/scenes/220635b87ef7/memory_enhanced_poster.webp",
+  "memory_montage": false,
+  "frames": 218,
+  "fps": 48.0,
+  "duration_seconds": 4.541666666666667,
+  "settings": {
+    "width": 832,
+    "height": 480,
+    "frustum_scale": 3.0,
+    "path_thickness_pixels": 4,
+    "frustum_thickness_pixels": 4,
+    "outline_pixels": 2,
+    "renderer_version": 1
+  },
+  "render_seconds": 1.35,
+  "original_overview_camera": "overview_camera.json",
+  "snapshots_rendered": 3,
+  "note": "Original causal Gaussian snapshots and original fixed overview camera; camera glyph size only is enlarged 3x. Camera positions/rotations are unchanged. Trail and frustum use true 3D projection. Native frame count/FPS preserved; causal snapshot changes occur at their saved availability frames."
+}
