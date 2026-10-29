@@ -49,6 +49,17 @@ _**Check out our [project page](https://cvlab-kaist.github.io/L3G-World/) for mo
 
 We thank the authors and contributors of [Cosmos-Predict2.5](https://github.com/nvidia-cosmos/cosmos-predict2.5) and [ZipSplat](https://github.com/cvg/ZipSplat.git) for their open-source projects.
 
+## ⚖️ License
+
+Our original code is licensed under [MIT](LICENSE). [Cosmos-Predict2.5](https://github.com/nvidia-cosmos/cosmos-predict2.5) and [ZipSplat](https://github.com/cvg/ZipSplat.git)
+code retain Apache-2.0. L3G-Mem weights are subject to
+[CC BY-NC 4.0](https://huggingface.co/veichta/zipsplat#license) (non-commercial),
+while L3G-Gen and L3G-Gen Fast weights follow the
+[NVIDIA Open Model License](https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/).
+Additional dependency and dataset terms apply; see [NOTICE](NOTICE).
+
+**Built on NVIDIA Cosmos.**
+
 ## 📜 Citation
 
 ```bibtex

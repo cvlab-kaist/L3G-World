@@ -1,0 +1,22 @@
+L3G-World
+Copyright (c) 2026 L3G-World Authors
+Original L3G-World code is licensed under the MIT License in LICENSE.
+Third-party code and model weights retain their separate terms.
+
+ZipSplat
+https://github.com/cvg/ZipSplat
+Alexander Veicht, Sunghwan Hong, Daniel Barath, and Marc Pollefeys.
+Upstream code: Apache License 2.0.
+Pretrained weights: CC BY-NC 4.0; non-commercial use only.
+Weights and attribution: https://huggingface.co/veichta/zipsplat
+
+NVIDIA Cosmos-Predict2.5
+https://github.com/nvidia-cosmos/cosmos-predict2.5
+Upstream code: Apache License 2.0.
+Models and derived checkpoints: NVIDIA Open Model License.
+Licensed by NVIDIA Corporation under the NVIDIA Open Model License
+https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
+
+This notice does not replace the applicable upstream license agreements.
+Include the applicable full agreements with redistributed model checkpoints
+and retain the original license/copyright notices in redistributed upstream code.
