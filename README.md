@@ -20,7 +20,6 @@
 <p align="center">
   <a href="https://cvlab-kaist.github.io/L3G-World/"><img src="https://img.shields.io/badge/Project-Page-blue" alt="Project Page"></a>
   <a href="https://arxiv.org/abs/2610.40614"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b" alt="arXiv"></a>
-  <a href="https://arxiv.org/pdf/2610.40614"><img src="https://img.shields.io/badge/Paper-PDF-blue" alt="Paper PDF"></a>
 </p>
 
 <p align="center">
