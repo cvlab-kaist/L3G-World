@@ -32,22 +32,22 @@
     <div class="authors" aria-label="Authors">
       <div class="author-row">
       <a class="author" href="https://wlsguur.github.io/" target="_blank" rel="noopener noreferrer">Jinhyeok Choi<sup>1,*</sup></a>
-      <button class="placeholder author" data-name="JoungBin Lee’s website">JoungBin Lee<sup>1,*</sup></button>
+      <a class="author" href="https://joungbinlee.github.io/" target="_blank" rel="noopener noreferrer">JoungBin Lee<sup>1,*</sup></a>
       <a class="author" href="https://icetea-cv.github.io/" target="_blank" rel="noopener noreferrer">Jongmin Lee<sup>1</sup></a>
-      <button class="placeholder author" data-name="Minkyeong Jeon’s website">Minkyeong Jeon<sup>1</sup></button>
+      <a class="author" href="https://sites.google.com/view/minjeon/home" target="_blank" rel="noopener noreferrer">Minkyeong Jeon<sup>1</sup></a>
       <a class="author" href="https://rlawldud53.github.io/" target="_blank" rel="noopener noreferrer">Jiyoung Kim<sup>1</sup></a>
       <button class="placeholder author" data-name="Kaeun Han’s website">Kaeun Han<sup>2</sup></button>
       </div>
       <div class="author-row">
-      <button class="placeholder author" data-name="Yoonjin Yoon’s website">Yoonjin Yoon<sup>1,3,†</sup></button>
+      <a class="author" href="https://sites.google.com/view/yoonjintrue/home?authuser=0">Yoonjin Yoon<sup>1,3,†</sup></a>
       <a class="author" href="https://cvlab.kaist.ac.kr/members/faculty" target="_blank" rel="noopener noreferrer">Seungryong Kim<sup>1,†</sup></a>
       </div>
     </div>
     <p class="affiliations"><span><sup>1</sup> KAIST AI</span><span><sup>2</sup> Ewha Womans University</span><span><sup>3</sup> KAIST Urban AI Institute</span></p>
     <p class="author-notes"><sup>*</sup> Equal contribution &nbsp; · &nbsp; <sup>†</sup> Corresponding authors</p>
     <div class="resources">
-      <button class="resource primary placeholder" data-name="Paper"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v5h4M10 12h5M10 16h5"/></svg>Paper<span>↗</span></button>
-      <button class="resource placeholder" data-name="arXiv"><img class="resource-icon" src="assets/icons/arxiv-logomark-small-white.svg" alt="" aria-hidden="true">arXiv<span>↗</span></button>
+      <a class="resource primary" href="https://arxiv.org/pdf/2610.40614" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v5h4M10 12h5M10 16h5"/></svg>Paper<span>↗</span></a>
+      <a class="resource" href="https://arxiv.org/abs/2610.40614" target="_blank" rel="noopener noreferrer"><img class="resource-icon" src="assets/icons/arxiv-logomark-small-white.svg" alt="" aria-hidden="true">arXiv<span>↗</span></a>
       <a class="resource" href="https://github.com/cvlab-kaist/L3G-World.git" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg>Code<span>↗</span></a>
       <button class="resource placeholder" data-name="Models"><svg viewBox="0 0 24 24"><path d="m12 3 9 5v9l-9 5-9-5V8zM3 8l9 5 9-5M12 13v9"/></svg>Models<span>↗</span></button>
       <button class="resource" id="open-bibtex" aria-haspopup="dialog" aria-controls="bibtex-dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H6v6l-3 2 3 2v6h2M16 4h2v6l3 2-3 2v6h-2"/></svg>BibTeX<span>↗</span></button>
@@ -177,12 +177,28 @@ Existing approaches rely on either temporal context or explicit 3D memory, both 
   </section>
   <section class="section wrap citation" id="bibtex">
     <div class="section-heading"><h2>BibTeX</h2></div>
-    <div class="bibtex-box"><button class="outline-button copy-bibtex" data-copy-target="bibtex-code">Copy BibTeX</button><pre><code id="bibtex-code"></code></pre></div>
+    <div class="bibtex-box"><button class="outline-button copy-bibtex" data-copy-target="bibtex-code">Copy BibTeX</button><pre><code id="bibtex-code">@misc{choi2026l3gworldrealtimeinfiniteworld,
+      title={L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory},
+      author={Jinhyeok Choi and JoungBin Lee and Jongmin Lee and Minkyeong Jeon and Jiyoung Kim and Kaeun Han and Yoonjin Yoon and Seungryong Kim},
+      year={2026},
+      eprint={2610.40614},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2610.40614},
+}</code></pre></div>
   </section>
 </main>
 <footer><div class="wrap footer-inner"><a class="wordmark" href="#top">L3G-World</a><p>Real-Time Infinite World Generation with Latent 3D Gaussian Memory</p></div></footer>
 <dialog id="scene-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><div><span class="mini-label" id="dialog-category"></span><h2 id="dialog-title"></h2></div><button class="icon-button" id="close-scene" aria-label="Close scene">✕</button></div><div class="dialog-tools"><label for="variant-select" id="variant-label" hidden>Accepted version <select id="variant-select"></select></label></div><div class="input-strip" id="dialog-inputs"></div><div class="dialog-videos"><div class="video-pane"><span>Generated Video</span><video id="modal-generated" muted playsinline preload="metadata"></video></div><div class="video-pane"><span>3D Memory Update</span><div class="memory-viewport"><video id="modal-memory" muted playsinline preload="metadata"></video></div></div><div class="video-pane"><span>Memory Render · RGB Preview</span><video id="modal-condition" muted playsinline preload="metadata"></video></div></div><div id="modal-growth" class="stage-growth-panel" hidden><figure class="growth-chart"><figcaption class="stage-label">Gaussian primitives (K)</figcaption><canvas id="modal-growth-primitives" class="scene-growth" width="1664" height="720" data-metric="primitives_k" role="img" aria-label="Gaussian primitive growth"></canvas></figure><figure class="growth-chart"><figcaption class="stage-label">3D memory (MiB)</figcaption><canvas id="modal-growth-memory" class="scene-growth" width="1664" height="720" data-metric="memory_mib" role="img" aria-label="3D memory growth"></canvas></figure></div><details class="prompt-details"><summary>Text prompt</summary><p id="modal-prompt"></p></details></dialog>
 <dialog id="figure-dialog"><button class="icon-button" id="close-figure" aria-label="Close figure">✕</button><img id="large-figure" alt="Enlarged paper architecture figure"></dialog>
-<dialog id="bibtex-dialog" aria-labelledby="bibtex-dialog-title"><div class="dialog-header"><h2 id="bibtex-dialog-title">BibTeX</h2><button class="icon-button" id="close-bibtex" aria-label="Close BibTeX">✕</button></div><div class="bibtex-box"><button class="outline-button copy-bibtex" data-copy-target="bibtex-modal-code">Copy BibTeX</button><pre><code id="bibtex-modal-code"></code></pre></div></dialog>
+<dialog id="bibtex-dialog" aria-labelledby="bibtex-dialog-title"><div class="dialog-header"><h2 id="bibtex-dialog-title">BibTeX</h2><button class="icon-button" id="close-bibtex" aria-label="Close BibTeX">✕</button></div><div class="bibtex-box"><button class="outline-button copy-bibtex" data-copy-target="bibtex-modal-code">Copy BibTeX</button><pre><code id="bibtex-modal-code">@misc{choi2026l3gworldrealtimeinfiniteworld,
+      title={L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory},
+      author={Jinhyeok Choi and JoungBin Lee and Jongmin Lee and Minkyeong Jeon and Jiyoung Kim and Kaeun Han and Yoonjin Yoon and Seungryong Kim},
+      year={2026},
+      eprint={2610.40614},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2610.40614},
+}</code></pre></div></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body></html>

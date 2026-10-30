@@ -34,7 +34,7 @@ project-page preview. The interactive Gaussian viewer requires WebGL2.
 ## Editing
 
 - `index.html`: writing, author/resource links, navigation, section headings,
-  TL;DR, and citation. The page citation is intentionally empty.
+  TL;DR, and citation. The supplied BibTeX is also saved in `assets/data/l3g-world.bib`.
 - `style.css`: typography, colors, and layout.
 - `app.js`: qualitative galleries, tables, and synchronized playback.
 - `assets/data/`: the current metrics and media manifests.
@@ -47,7 +47,8 @@ were removed from copied metadata; numerical measurements and media were kept.
 Two unlinked legacy review directories are omitted; all sections of the current
 project page are included.
 
-Paper, arXiv, Models, and any unfinished author links remain inert placeholders.
-Real author links and the Code button remain as in the source page.
+Paper and arXiv link to the paper PDF and abstract. Models and any unfinished
+author links remain inert placeholders. Real author links and the Code button
+remain as in the source page.
 
 This preparation does not commit, push, or enable GitHub Pages.
