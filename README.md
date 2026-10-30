@@ -8,7 +8,7 @@
   <a href="https://sites.google.com/view/minjeon/home">Minkyeong Jeon</a><sup>1</sup> ·
   <a href="https://rlawldud53.github.io/">Jiyoung Kim</a><sup>1</sup> ·
   <a href="#">Kaeun Han</a><sup>2</sup><br>
-  <a href="#">Yoonjin Yoon</a><sup>1,3,†</sup> ·
+  <a href="https://sites.google.com/view/yoonjintrue/home?authuser=0">Yoonjin Yoon</a><sup>1,3,†</sup> ·
   <a href="https://cvlab.kaist.ac.kr/members/faculty">Seungryong Kim</a><sup>1,†</sup>
 </p>
 
@@ -17,10 +17,10 @@
   <sup>*</sup> Equal contribution &nbsp; <sup>†</sup> Corresponding authors
 </p>
 
-<!-- Replace the # placeholder links with the final project-page and arXiv URLs. -->
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/Project-Page-blue" alt="Project Page"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b" alt="arXiv"></a>
+  <a href="https://cvlab-kaist.github.io/L3G-World/"><img src="https://img.shields.io/badge/Project-Page-blue" alt="Project Page"></a>
+  <a href="https://arxiv.org/abs/2610.40614"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b" alt="arXiv"></a>
+  <a href="https://arxiv.org/pdf/2610.40614"><img src="https://img.shields.io/badge/Paper-PDF-blue" alt="Paper PDF"></a>
 </p>
 
 <p align="center">
@@ -63,5 +63,13 @@ Additional dependency and dataset terms apply; see [NOTICE](NOTICE).
 ## 📜 Citation
 
 ```bibtex
-TBD
+@misc{choi2026l3gworldrealtimeinfiniteworld,
+      title={L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory},
+      author={Jinhyeok Choi and JoungBin Lee and Jongmin Lee and Minkyeong Jeon and Jiyoung Kim and Kaeun Han and Yoonjin Yoon and Seungryong Kim},
+      year={2026},
+      eprint={2610.40614},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2610.40614},
+}
 ```
