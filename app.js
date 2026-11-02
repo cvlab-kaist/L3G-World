@@ -84,7 +84,7 @@ $$('.copy-bibtex').forEach(button => button.addEventListener('click', async () =
 }));
 
 async function main() {
-  const response = await fetch('assets/data/site.json');
+  const response = await fetch('assets/data/site.json', {cache: 'no-store'});
   if (!response.ok) throw new Error('Scene data could not be loaded.');
   const data = await response.json();
   const growthResponse = await fetch('assets/data/memory_growth_timing.json');
@@ -274,21 +274,18 @@ async function main() {
       pairVideos(previous).forEach(video => { video.removeAttribute('src'); video.load(); });
     }
     const item = scene.variants[variantIndex]; stage.replaceChildren();
+    stage.classList.toggle('anchored-stage', scene.category === 'stitch');
     stage.dataset.sceneId = scene.scene_id; stage.dataset.variantId = item.id;
     const left = node('div', undefined, 'stage-left');
     const inputPane = node('div', undefined, 'stage-input-pane');
     const inputHeader = node('div', undefined, 'stage-label');
     const inputs = node('div', undefined, 'stage-inputs' + (scene.category === 'multi' ? ' multiview-grid' : ''));
     if (scene.category === 'stitch') {
-      const toggle = node('div', undefined, 'input-toggle'); toggle.setAttribute('role', 'group'); toggle.setAttribute('aria-label', 'Displayed anchor input');
-      const image = node('img'); image.src = item.inputs[0]; image.alt = 'Image 1'; inputs.append(image);
+      inputs.classList.add('anchor-input-pair');
       item.inputs.forEach((path, index) => {
-        const button = node('button', `Image ${index + 1}`); button.setAttribute('aria-pressed', String(index === 0));
-        button.addEventListener('click', () => {
-          image.src = path; image.alt = `Image ${index + 1}`;
-          $$('button', toggle).forEach(other => other.setAttribute('aria-pressed', String(other === button)));
-        }); toggle.append(button);
-      }); inputHeader.append(toggle);
+        inputHeader.append(node('span', `Image ${index + 1}`));
+        const image = node('img'); image.src = path; image.alt = `Image ${index + 1}`; inputs.append(image);
+      });
     } else {
       inputHeader.append(node('span', item.inputs.length > 1 ? 'Input Images' : 'Input Image'));
       item.inputs.forEach((path, index) => { const image = node('img'); image.src = path; image.alt = `Input image ${index + 1}`; inputs.append(image); });
@@ -324,7 +321,7 @@ async function main() {
     if (speedCaption) right.append(speedCaption);
     stage.append(left, right);
     const growth = [];
-    if (item.growth_primitives && item.growth_memory) {
+    if (growthTimelines.has(scene.scene_id)) {
       const panel = node('div', undefined, 'stage-growth-panel');
       for (const [key, label, metric] of [['growth_primitives','Gaussian primitives (K)','primitives_k'],['growth_memory','3D memory (MiB)','memory_mib']]) {
         const figure = node('figure', undefined, 'growth-chart');
@@ -448,9 +445,9 @@ async function main() {
       video.closest('.video-pane').hidden = !path;
       if (path) video.src = path;
     }
-    $('#modal-growth').hidden = !item.growth_primitives;
+    $('#modal-growth').hidden = !growthTimelines.has(modalScene.scene_id);
     modalCharts.forEach(canvas => { delete canvas.dataset.signature; });
-    if (item.growth_primitives) drawGrowth(modalCharts, modalScene.scene_id, master);
+    if (growthTimelines.has(modalScene.scene_id)) drawGrowth(modalCharts, modalScene.scene_id, master);
     if (videosEnabled) play(master);
   }
   function openScene(scene, variantIndex = 0) {
@@ -505,18 +502,30 @@ async function main() {
   const numeric = (value, digits = 3) => value === null ? '—' : value.toLocaleString('en-US', {minimumFractionDigits:digits, maximumFractionDigits:digits});
   const mainLabels = ['Primitives\n(K) ↓', '3D Memory Cost\n(MiB) ↓', 'Memory Reconstruction\n(FPS) ↑', 'Render FPS\n(RGB) ↑', 'Render FPS\n(VAE) ↑',
     'PSNR ↑', 'SSIM ↑', 'LPIPS ↓', 'LPIPS ↓', 'FID ↓', 'IQ ↑', 'AQ ↑', 'SC ↑', 'BC ↑', 'TransErr ↓', 'RotErr (°) ↓', 'MEt3R ↓'];
-  const mainGroups = [['Efficiency',5], ['Self-consistency',3], ['Generation quality',6], ['Pose error',2], ['3D consistency',1]];
-  const mainDigits = [0,1,2,2,2,2,3,3,3,2,3,3,3,3,3,2,3];
+  const mainGroups = [['3D Memory Efficiency',5], ['Self-Consistency',3], ['Generation Quality',6], ['Pose Error',2], ['3D Consistency',1]];
+  const mainDigits = [0,2,3,2,2,2,3,3,3,2,3,3,3,3,3,2,3];
   const mainDirections = ['min','min','max','max','max','max','max','min','min','min','max','max','max','max','min','min','min'];
   function tableHead(table, labels, groups, first = 'Method') {
     const head = node('thead'), top = node('tr');
     const method = node('th', first); method.rowSpan = 2; method.scope = 'col'; top.append(method);
-    groups.forEach(([name, count]) => { const th = node('th', name); th.colSpan = count; th.scope = 'colgroup'; top.append(th); });
-    const bottom = node('tr'); labels.forEach(label => { const th = node('th', label); th.scope = 'col'; bottom.append(th); });
+    const boundaries = new Set(); let columns = 0;
+    groups.forEach(([name, count], index) => {
+      columns += count;
+      const th = node('th', name); th.colSpan = count; th.scope = 'colgroup';
+      if (index < groups.length - 1) { boundaries.add(columns); th.classList.add('metric-group-end'); }
+      top.append(th);
+    });
+    table.dataset.metricGroupEnds = [...boundaries].join(',');
+    const bottom = node('tr'); labels.forEach((label, index) => {
+      const th = node('th', label); th.scope = 'col';
+      if (boundaries.has(index + 1)) th.classList.add('metric-group-end');
+      bottom.append(th);
+    });
     head.append(top, bottom); table.append(head);
   }
   function tableRows(table, rows, digits, directions, roundUpColumns = []) {
     const body = node('tbody');
+    const boundaries = new Set((table.dataset.metricGroupEnds || '').split(',').filter(Boolean).map(Number));
     const values = Object.values(rows);
     const ranks = directions.map((direction, index) =>
       [...new Set(values.map(row => row[index]).filter(Number.isFinite))]
@@ -531,7 +540,9 @@ async function main() {
           ? Math.ceil(Number((value * scale).toPrecision(14))) / scale : value;
         const rankClass = value === ranks[index][0] ? 'best'
           : value === ranks[index][1] ? 'second-best' : '';
-        row.append(node('td', numeric(display, digits[index]), rankClass));
+        const cell = node('td', numeric(display, digits[index]), rankClass);
+        if (boundaries.has(index + 1)) cell.classList.add('metric-group-end');
+        row.append(cell);
       });
       body.append(row);
     });
@@ -548,7 +559,7 @@ async function main() {
     const viewport = node('div', undefined, 'table-scroll'); viewport.tabIndex = 0; viewport.setAttribute('role', 'region'); viewport.setAttribute('aria-label', `${title} quantitative results; scroll for all metrics`);
     const table = node('table', undefined, 'full-quality-table'); table.id = `quality-${dataset}`;
     const caption = node('caption', `All 17 metrics on ${title}`, 'sr-only'); table.append(caption);
-    tableHead(table, mainLabels, mainGroups); tableRows(table, data.quality[dataset], mainDigits, mainDirections, [1,2,3,4]);
+    tableHead(table, mainLabels, mainGroups); tableRows(table, data.quality[dataset], mainDigits, mainDirections);
     viewport.append(table); section.append(viewport); $('#quality-tables').append(section);
   }
   const datasetTabs = $$('.dataset-tabs [role="tab"]');
@@ -572,8 +583,8 @@ async function main() {
     });
   });
   const memoryTable = $('#ablation-memory-table');
-  tableHead(memoryTable, ['MSE ↓', 'Cosine ↑', 'Gaussians\n(K) ↓', 'Recon. latency\n(ms) ↓', 'Render FPS\n(VAE) ↑', 'PSNR ↑', 'SSIM ↑', 'LPIPS ↓'], [['VAE reconstruction',2],['Efficiency',3],['RGB reconstruction',3]], 'Variant');
-  tableRows(memoryTable, data.ablation.memory, [3,3,0,2,2,2,3,3], ['min','max','min','min','max','max','max','min']);
+  tableHead(memoryTable, ['MSE ↓', 'Cosine ↑', 'Gaussians\n(K) ↓', 'Recon. FPS ↑', 'Render FPS\n(VAE) ↑', 'PSNR ↑', 'SSIM ↑', 'LPIPS ↓'], [['VAE Reconstruction',2],['Efficiency',3],['RGB Reconstruction',3]], 'Variant');
+  tableRows(memoryTable, data.ablation.memory, [3,3,0,2,2,2,3,3], ['min','max','min','max','max','max','max','min']);
   const worldTable = $('#ablation-world-table');
   tableHead(worldTable, mainLabels.slice(5), mainGroups.slice(1), 'Variant');
   tableRows(worldTable, data.ablation.world, mainDigits.slice(5), mainDirections.slice(5));
