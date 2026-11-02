@@ -26,7 +26,7 @@
   <img src="assets/teaser.png" alt="L3G-World overview: input images, text and cameras initialize latent 3D Gaussian memory; L3G-Mem updates the memory while L3G-Gen generates subsequent video chunks." width="100%">
 </p>
 
-**L3G-World couples L3G-Mem and L3G-Gen to generate consistent worlds over long horizons.** Given one image, a text prompt, and a camera trajectory, the L3G-Worls alternates between generating video chunks and updating a persistent **latent 3D Gaussian memory**. Its memory grows with explored scene extent, while direct rendering into the diffusion latent space enables real-time generation with a few-step video model.
+**L3G-World couples L3G-Mem and L3G-Gen to generate consistent worlds over long horizons.** Given one image, a text prompt, and a camera trajectory, the L3G-World alternates between generating video chunks and updating a persistent **latent 3D Gaussian memory**. Its memory grows with explored scene extent, while direct rendering into the diffusion latent space enables real-time generation with a few-step video diffusion model.
 
 _**Check out our [project page](https://cvlab-kaist.github.io/L3G-World/) for more videos and details!**_
 
