@@ -22,7 +22,8 @@ function videoTransport(video, options = {}) {
     if (!scrubbing) seek.value = duration ? video.currentTime / duration : 0;
     time.textContent = `${fmt(video.currentTime / video.playbackRate)} / ${fmt(duration / video.playbackRate)}`;
     button.textContent = video.paused ? '▶' : 'Ⅱ';
-    button.setAttribute('aria-label', video.paused ? 'Play synchronized videos' : 'Pause synchronized videos');
+    const target = options.label || 'synchronized videos';
+    button.setAttribute('aria-label', `${video.paused ? 'Play' : 'Pause'} ${target}`);
   }
   button.addEventListener('click', () => {
     if (options.toggle) options.toggle(); else if (video.paused) play(video); else video.pause();
@@ -41,6 +42,14 @@ function videoTransport(video, options = {}) {
   ['loadedmetadata', 'timeupdate', 'seeking', 'seeked', 'play', 'pause', 'ratechange', 'emptied'].forEach(event => video.addEventListener(event, update));
   bar.append(button, seek, time); update();
   return {element:bar, update, button, seek, time};
+}
+// The teaser starts muted on page entry and keeps the shared playback controls.
+const teaserVideo = $('#teaser-video');
+if (teaserVideo) {
+  const transport = videoTransport(teaserVideo, {label:'teaser video'});
+  $('#teaser-controls').append(transport.element);
+  teaserVideo.muted = true;
+  play(teaserVideo);
 }
 let toastTimer;
 function toast(message) {

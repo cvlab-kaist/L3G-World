@@ -248,3 +248,18 @@ td.second-best{text-decoration-line:underline;text-decoration-thickness:1.5px;te
   #efficient-3d-memory .efficiency-grid{grid-template-columns:1fr}
   .overview-figure-frame{padding:13px}
 }
+
+/* Teaser v6, directly above the TL;DR. */
+.project-teaser{max-width:1180px;margin:0 auto 28px;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#fff;text-align:left}
+.project-teaser>video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#f5f9f7}
+.project-teaser-controls{min-height:45px;padding:9px 16px 11px;border-top:1px solid var(--line)}
+.project-teaser-controls .video-transport{margin-top:0}
+.project-teaser-controls .transport-play{width:32px;height:28px}
+@media(max-width:700px){.project-teaser{margin-bottom:22px;border-radius:8px}.project-teaser-controls{padding:8px 10px 10px}}
+
+/* Separate the overview figure from the teaser and TL;DR. */
+.overview-section{margin-top:52px;padding-top:52px;border-top:1px solid #e4eae6}
+.overview-section .section-heading{margin-bottom:26px}
+.overview-section .overview-figure{margin-top:0;margin-bottom:8px}
+.overview-section+.contributions{padding-top:12px}
+@media(max-width:700px){.overview-section{margin-top:36px;padding-top:36px}.overview-section .section-heading{margin-bottom:20px}}

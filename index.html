@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#f7f9f8">
   <title>L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=20261102-border-match">
-  <script src="app.js?v=20261102-table-groups" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261103-teaser-autoplay-overview">
+  <script src="app.js?v=20261103-teaser-autoplay-overview" defer></script>
   <script src="reconstruction-embed.js" defer></script>
   <script src="memory-ablations.js" defer></script>
 </head>
@@ -52,9 +52,22 @@
       <button class="resource placeholder" data-name="Models"><svg viewBox="0 0 24 24"><path d="m12 3 9 5v9l-9 5-9-5V8zM3 8l9 5 9-5M12 13v9"/></svg>Models<span>↗</span></button>
       <button class="resource" id="open-bibtex" aria-haspopup="dialog" aria-controls="bibtex-dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H6v6l-3 2 3 2v6h2M16 4h2v6l3 2-3 2v6h-2"/></svg>BibTeX<span>↗</span></button>
     </div>
+    <figure class="project-teaser" id="teaser" aria-label="L3G-World teaser video">
+      <video id="teaser-video" width="1920" height="1080" autoplay muted playsinline preload="auto" aria-label="L3G-World teaser">
+        <source src="assets/teaser/teaser_v6.mp4" type="video/mp4">
+        <source src="assets/teaser/teaser_v6.webm" type="video/webm">
+        Your browser does not support embedded video. <a href="assets/teaser/teaser_v6.mp4">Watch the teaser</a>.
+      </video>
+      <div class="project-teaser-controls" id="teaser-controls"></div>
+    </figure>
     <div class="text-box tldr" id="tldr"><p><strong class="gradient-text">TL;DR</strong> L3G-World couples L3G-Mem and L3G-Gen to generate consistent worlds over long horizons. Its 3D memory grows adaptively with explored scene extent, while direct rendering into the diffusion latent space enables real-time generation.</p></div>
-    <figure class="overview-figure"><div class="overview-figure-frame"><img style="display:block;width:100%;height:auto" src="assets/paper/overview.webp" alt="Overview of the L3G-Mem and L3G-Gen world-generation pipeline" width="3000" height="1278" loading="lazy"></div></figure>
+  </section>
 
+  <section class="overview-section" id="pipeline-overview" aria-labelledby="pipeline-overview-title">
+    <div class="wrap">
+      <div class="section-heading"><h3 id="pipeline-overview-title">Overview</h3></div>
+      <figure class="overview-figure"><div class="overview-figure-frame"><img style="display:block;width:100%;height:auto" src="assets/paper/overview.webp" alt="Overview of the L3G-Mem and L3G-Gen world-generation pipeline" width="3000" height="1278" loading="lazy"></div></figure>
+    </div>
   </section>
 
   <section class="contributions wrap" id="contributions" aria-label="Key contributions">
