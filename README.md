@@ -39,10 +39,14 @@ _**Check out our [project page](https://cvlab-kaist.github.io/L3G-World/) for mo
 
 ## 📌 Release Plan
 
-- [ ] L3G-Mem code and model checkpoints.
-- [ ] L3G-Gen code and checkpoints.
+We are currently undergoing internal review and code cleanup, and plan to release the following soon:
+
+- [ ] L3G-Mem inference code and checkpoints.
+- [ ] L3G-Gen inference code and checkpoints.
 - [ ] L3G-World inference code.
-- [ ] L3G-Gen Fast model checkpoints.
+- [ ] L3G-Gen Fast (few-step model) inference code and checkpoints.
+- [ ] L3G-Mem training code.
+- [ ] L3G-Gen training code.
 
 ## 🙏 Acknowledgements
 
